@@ -1,0 +1,8 @@
+<main class="main">
+    <div class="head-bar">
+        <button *ngIf="isAdmin" type="button" class="head-bar__button button-add-post" (click)="addPost()">Добавить пост</button>
+        <button type="button" class="head-bar__button button-exit" (click)="logout()">Выйти</button>
+    </div>
+    <div class="posts"></div>
+    <button type="button" class="button-lazy-load" (click)="retrievePosts('lazyLoad')">Показать предыдущие...</button>
+</main>
