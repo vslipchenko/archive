@@ -1,0 +1,37 @@
+//* theme pallette
+// NTC khaki lightcoral wheat burlywood aquamarine deepskyblue 
+// lightblue hotpink darksalmon darkseagreen lightgreen 
+// lightpink lightsalmon mediumaquamarine
+// orange palegreeen pink springgreen
+
+// white
+$primary: #fff;
+
+// blue
+$primary-blue: #425b67;
+$primary-lighter-blue: #80cbc4;
+$primary-light-blue: #009688;
+$primary-dark-blue: #263238;
+$primary-darker-blue: #1e272c;
+
+// yellow
+$primary-yellow: #ffcc00;
+$primary-lightest-yellow: #f5f5dc;
+
+//pink
+$primary-pink: #ff1493;
+
+//* measures
+
+// base
+$base: 8px;
+
+$space-1: $base;
+$space-2: $base * 2;
+$space-3: $base * 3;
+$space-9: $base * 9;
+
+//* font
+
+// 14px
+$font-size-primary: 0.875rem;

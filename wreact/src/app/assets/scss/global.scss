@@ -1,0 +1,48 @@
+@import "./variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.page,
+.main {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: $font-size-primary;
+}
+
+.page {
+    background-color: $primary-darker-blue;
+}
+
+.main {
+    width: 75%;
+    margin: auto;
+    background-color: $primary-dark-blue;
+    box-shadow: 0 0 #{$base * 4} 0 rgba(0, 0, 0, 0.7);
+    padding: $space-3 $space-9;
+}
+
+.header {
+    height: $base * 5;
+    display: flex;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: $space-3;
+        }
+    }
+}
+
+::selection {
+    color: $primary-lightest-yellow;
+    background: $primary-pink;
+}

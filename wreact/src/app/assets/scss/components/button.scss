@@ -1,0 +1,31 @@
+@import "../variables.scss";
+
+button {
+    background-color: unset;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+.button {
+    cursor: pointer;
+    padding: $space-1 $space-2;
+    position: relative;
+
+    &-primary {
+        font-weight: bold;
+        color: $primary-lightest-yellow;
+        color: $primary;
+
+        // green theme
+        &_green {
+            transition: color .3s;
+        }
+
+        &_green:hover,
+        &_green::first-letter {
+            color: yellowgreen; // HTBR
+        }
+    }
+}
