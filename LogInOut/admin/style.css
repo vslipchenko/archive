@@ -1,0 +1,141 @@
+html,
+body {
+    height: 100%;
+}
+
+button {
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: inherit;
+}
+
+input {
+    background: none;
+    color: inherit;
+    font-size: inherit;
+    text-align: inherit;
+    border: none;
+    font-family: inherit;
+}
+
+textarea {
+    background: none;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    resize: none;
+}
+
+.body {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(253, 231, 211);
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__button {
+    width: 40px;
+    margin: 10px 10px 0 10px;
+}
+
+.button-add-content {
+    background: dodgerblue;
+}
+
+.button-logout {
+    background: tomato;
+    height: 40px;
+}
+
+.main {
+    height: 100%;
+}
+
+.content {
+    overflow: auto;
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-item {
+    height: 150px;
+    background-color: lightpink;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.content-item:last-child {
+    margin-bottom: none;
+}
+
+.content-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-text__item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-title {
+    height: 70px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.75);
+}
+
+.content-note {
+    padding: 15px 15px 0;
+    box-sizing: border-box;
+    justify-content: start;
+    overflow: auto;
+    align-items: start;
+    text-align: left;
+    text-indent: 15px;
+    margin-bottom: 15px;
+}
+
+.content-manage {
+    width: max-content;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 0 15px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+.button-save,
+.button-discard {
+    display: none;
+}
+
+.content-item.edited .button-save,
+.content-item.edited .button-discard {
+    display: block;
+}
+
+.content__button {
+    width: 40px;
+    height: 40px;
+    background-color: hotpink;
+    margin-right: 5px;
+}
+
+.content__button:last-child {
+    margin-right: 0;
+}

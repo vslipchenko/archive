@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Wedding Dance</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+<body class="body">
+        <header class="header body__block">
+            <div class="header__block header__block_column-1">
+                <h1 class="header__company-name company-name">Wedding Dance</h1>
+            </div>
+            <div class="header__block header__block_column-2">
+                <nav class="header-menu header-menu_desktop">
+                    <a href="" class="header-menu__item">Homework</a>
+                    <a href="" class="header-menu__item">Services</a>
+                    <a href="" class="header-menu__item">Our Coaches</a>
+                    <a href="" class="header-menu__item">Testimonials</a>
+                    <a href="" class="header-menu__item">FAQ</a>
+                    <a href="" class="header-menu__item">Lesson Review</a>
+                    <button class="header-menu__item header-button">Start</button>
+                </nav>
+                <button class="header-menu header-menu_phone"
+                        onclick="toggleMenu(this);">
+                    <span class="menu-bar-1"></span>
+                    <span class="menu-bar-2"></span>
+                    <span class="menu-bar-3"></span>
+                </button>
+            </div>
+        </header>
+        <main class="main body__block">
+            <section class="main__block intro">
+                <article class="intro-article">
+                    <h2 class="intro-article__item intro-heading">Wedding Dance Lessons</h2>
+                    <span class="intro-article__item intro-location">New Jersey</span>
+                    <p class="intro-article__item intro-text intro-text_desktop">
+                        The wedding dance is one of the most important dances in your life. You look perfect and the whole audience is looking at you. Also, it becomes the favorite moment you like to play on videos and photos. Feel the moment
+                    </p>
+                    <p class="intro-article__item intro-text intro-text_phone">
+                        Let this dance become the favorite moment you like to play on videos and photos. Feel the moment
+                    </p>
+                    <button class="intro-button">Let's start</button>
+                </article>
+            <span class="intro-image"></span>
+        </section>
+        <section class="main__block main-block service">
+            <div class="main-block__text wow fadeInUp">
+                <h2 class="main-block__title">Our Services</h2>
+                <p class="main-block__description">
+                    We want to make your wedding day perfect that is why suggest a lot of options for dance: not only for a bride and groom but for their friends and relatives
+                </p>
+            </div>
+            <div class="service-list wow fadeInLeft"
+                 data-wow-duration="1.3s"
+                 data-wow-delay=".45s">
+                <div class="service-list__item for-bride-n-groom">
+                    <img class="service-item__image" src="image/service/for-bride-n-groom-s.jpg"></img>
+                    <div class="service-item__info service-info">
+                        <h3 class="service-info__title">For Bride and Groom</h3>
+                        <ul class="service-info__list">
+                            <li class="services__item">First Dance</li>
+                            <li class="services__item">Parent & Child Dance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-list__item for-guests">
+                    <img class="service-item__image" src="image/service/for-guests-s.jpg"></img>
+                    <div class="service-item__info service-info">
+                        <h3 class="service-info__title">For Guests</h3>
+                        <ul class="service-info__list services">
+                            <li class="services__item">Groomsmen Dance</li>
+                            <li class="services__item">Parent Dance</li>
+                            <li class="services__item">Children’s Dance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-list__item other-events">
+                    <img class="service-item__image" src="image/service/other-events-s.jpg"></img>
+                    <div class="service-item__info service-info">
+                        <h3 class="service-info__title">Other events</h3>
+                        <ul class="service-info__list">
+                            <li class="services__item">Bridal Party Dance</li>
+                            <li class="services__item">Anniversary Dance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__block main-block offers">
+            <div class="main-block__text wow fadeInUp">
+                <h2 class="main-block__title">What we offer</h2>
+                <p class="main-block__description">
+                    Our goal is not only to teach you how to dance but also give the best unforgettable memories about preparing to your event
+                </p>
+            </div>
+            <div class="offers-list">
+                <div class="offers-list__item">
+                    <i class="offers-list__icon offers-list__icon_coaches wow zoomIn"></i>
+                    <span class="offers-list__text">Talented Coaches</span>
+                </div>
+                <div class="offers-list__item">
+                    <i class="offers-list__icon offers-list__icon_rooms wow zoomIn"></i>
+                    <span class="offers-list__text">Cozy rooms for training</span>
+                </div>
+                <div class="offers-list__item">
+                    <i class="offers-list__icon offers-list__icon_food wow zoomIn"></i>
+                    <span class="offers-list__text">Coffee, tea, and cookies</span>
+                </div>
+                <div class="offers-list__item">
+                    <i class="offers-list__icon offers-list__icon_form wow zoomIn"></i>
+                    <span class="offers-list__text">Good physical form</span>
+                </div>
+                <div class="offers-list__item">
+                    <i class="offers-list__icon offers-list__icon_star wow zoomIn"></i>
+                    <span class="offers-list__text">Self Confidence and success on your event</span>
+                </div>
+                <div class="offers-list__item">
+                    <i class="offers-list__icon offers-list__icon_fun wow zoomIn"></i>
+                    <span class="offers-list__text">Exciting emotions and a lot of fun</span>
+                </div>
+                <div class="offers-list__item">
+                    <i class="offers-list__icon offers-list__icon_photo wow zoomIn"></i>
+                    <span class="offers-list__text">Great photos from your event</span>
+                </div>
+                <div class="offers-list__item">
+                    <i class="offers-list__icon offers-list__icon_coop wow zoomIn"></i>
+                    <span class="offers-list__text">Spend hours together in happiness</span>
+                </div>
+            </div>
+        </section>
+    </main>
+  <footer class="footer body__block">
+        <div class="footer__block footer__block_column-1">
+            <span class="footer__company-name company-name">Wedding Dance</span>
+        </div>
+        <div class="footer__block footer__block_column-2">
+            <div class="footer__copyright">Copyright © 2019
+                <span class="footer__copyright-extended">Wedding Dance New Jersey</span>
+            </div>
+            <div class="footer__credits">
+                <label class="footer__credits-label">Developed by</label>
+                Matiukhina
+            </div>
+        </div>
+    </footer>
+    <script>
+        'use strict';
+
+        const Sli = (() => {
+
+            const touchDevice = 'ontouchstart' in document.documentElement;
+
+            let slider,
+                sliderWidth,
+                slidesQuantity,
+                slidesGap,
+                slideIndex = 0,
+                slideWidth,
+                swapDirection,
+                swapThreshold = 90,
+                startX,
+                lastX;
+
+            const S = function (o) {
+                if (!o.slider || o.widthCondition < window.outerWidth) return;
+                slider = o.slider;
+                slider.classList.add('sli-der');
+                sliderWidth = slider.scrollWidth;
+                slidesQuantity = slider.childElementCount;
+                slideWidth = slider.children[0].offsetWidth;
+                slidesGap = (sliderWidth - slideWidth * slidesQuantity) / (slidesQuantity - 1);
+                if(o.dots) this.renderDots(o.dots);
+                if (touchDevice) {
+                    slider.addEventListener('touchstart', (c) => {
+                        startX = c.touches[0].clientX;
+                    });
+
+                    slider.addEventListener('touchmove', (c) => {
+                        lastX = c.touches[0].clientX;
+                        swapDirection = lastX < startX ? 0 : 1;
+                    });
+
+                    slider.addEventListener('touchend', (c) => {
+                        if (Math.abs(startX - lastX) > swapThreshold) {
+                            if (swapDirection) {
+                                if (slideIndex > 0) {
+                                    slideIndex--;
+                                    this.slideTo();
+                                }
+                            }
+                            else {
+                                if (slideIndex < slidesQuantity - 1) {
+                                    slideIndex++;
+                                    this.slideTo();
+                                }
+                            }
+                        }
+                    });
+                }
+            };
+
+            S.prototype.renderDots = function (options) {
+                let e = '';
+                for (let i = 0; i < slidesQuantity; i++) {
+                    e += '<span class="sli-dot' + (!i ? ' selected' : '') + '"></span>';
+                }
+                let d = '<div class="sli-dots">' + e + '</div>';
+                options.position[1] ? options.position[1].insertAdjacentHTML(options.position[0], d)
+                                    : slider.insertAdjacentHTML(options.position[0], d);
+                d = document.getElementsByClassName('sli-dot');
+                for (e = 0; e < d.length; e++) {
+                    d[e].addEventListener('click',  (e) => {
+                        e = e.target;
+                        if (!e.classList.contains('selected')) {
+                            slideIndex = Array.prototype.indexOf.call(e.parentNode.children, e);
+                            this.slideTo();
+                        }
+                    });
+                }
+            };
+
+            S.prototype.slideTo = function () {
+                slider.style.transform = 'translateX(-' + slideIndex * (slideWidth + slidesGap) + 'px)';
+                document.getElementsByClassName('sli-dot selected')[0].classList.remove('selected');
+                document.getElementsByClassName('sli-dot')[slideIndex].classList.add('selected');
+            };
+
+            return S;
+        })();
+
+        new Sli({
+            slider: document.querySelector('.service-list'),
+            dots: {
+                position: ['afterend']
+            },
+            widthCondition: 375
+        });
+
+        new WOW().init();
+
+        function toggleMenu (b) {
+            document.getElementsByClassName('header-menu_desktop')[0].classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
