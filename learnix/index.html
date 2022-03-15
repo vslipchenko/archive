@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>learNIX</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap&subset=cyrillic" rel="stylesheet"> 
+    <style>
+        body,html{height:100%}body{margin:0;display:flex;font-size:1em;font-family:'Roboto Mono',monospace;text-align:center;background-color:#f5f5f5}ul{list-style-type:none;margin:0;padding:0}a{color:#000;text-decoration:none;cursor:pointer}::-webkit-scrollbar{width:7px;background-color:#e8e8e8}::-webkit-scrollbar-thumb{background-color:#c8c8c8}.column{display:flex;flex-direction:column}.title{line-height:50px;height:50px;color:#fff}.title::after{content:attr(data-text)}.sidebar{width:25%}.menu-title{background-color:#483d8b}.menu-list.root{flex:1;overflow-y:auto;scrollbar-width:thin}.menu-item{cursor:pointer;line-height:50px;border-bottom:1px solid rgba(0,0,0,.2)}.menu-item .menu-item{border-color:transparent}.menu-item.expand{border-color:rgba(30,144,255,1)}.menu-item.expand .menu-item.expand{border-color:rgba(0,0,0,.2)}.menu-link{display:block}.menu-link:not(.selected):hover{color:#fff;background-color:#f08080}.menu-list .menu-link.selected{color:#fff;background-color:#1e90ff;cursor:auto}.menu-list .menu-list .menu-link.selected{background-color:#6fb8ff}.menu-list .menu-list .menu-list .menu-link.selected{background-color:#a3d1ff}.menu-link+.menu-list{display:none}.menu-link.selected+.menu-list{display:block}.main{flex:1;box-shadow:inset 0 0 15px -12px #000}.main-title{background-color:#ff8c00}.main-content{flex:1;display:none;overflow-y:auto;scrollbar-width:thin}.main-content.show{display:flex}.main-item{display:flex;font-size:.9em}.main-item{border-bottom:10px solid #f5f5f5}.main-item:last-child{border-bottom:none}.main-info{flex:.25;padding:12.5px;background-color:bisque}.main-info__from::before{content:'от: '}.main-date{margin-bottom:10px}.main-data{flex:auto;padding:12.5px;background-color:#ffebcd;text-align:start;word-break:break-word}.main-data__item{margin-bottom:10px}.main-data__item:last-child{margin-bottom:0}.data-message__title{display:block;font-weight:700;margin-bottom:10px}.data-link{color:brown}.data-link:last-child{margin-bottom:0}.data-link::after{content:attr(href)}.github-title{background-color:teal}.github-info{flex:1;text-align:start;overflow-y:auto;scrollbar-width:thin}.github-info__person{padding:12.5px 20px;cursor:pointer;border-bottom:1px solid rgba(0,0,0,.2)}.github-info__person:hover{background-color:#f08080}.github-info__person:hover .github-info__link{color:#fff}.github-info__sur-name{display:block;font-size:1.1em}.github-info__uname{font-size:.9em}@media (max-width:500px){body{flex-direction:column}.title{position:sticky;top:0}.main{flex:0}.sidebar{width:100%}.sidebar .github-info,.sidebar .menu-list.root{display:none}.sidebar.expand .github-info,.sidebar.expand .menu-list.root{display:initial}}
+    </style>
+</head>
+<body>
+    <sidebar class="menu sidebar column expand">
+        <div class="menu-title title" data-text="Меню"></div>
+        <ul class="menu-list root">
+            <li class="menu-item">
+                <a class="menu-link">Основной материал</a>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a class="menu-link">JavaScript</a>
+                        <ul class="menu-list">
+                            <li class="menu-item"><a class="menu-link">Angular</a></li>
+                            <li class="menu-item"><a class="menu-link">React</a></li>
+                            <li class="menu-item"><a class="menu-link">React Native</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" data-content-id="main-material-html-css">HTML / CSS</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link">Доп. материал</a>
+                <ul class="menu-list">
+                    <li class="menu-item"><a class="menu-link" data-content-id="additional-material-javascript">JavaScript</a></li>
+                    <li class="menu-item"><a class="menu-link" data-content-id="additional-material-html-css">HTML / CSS</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link">Инструменты</a>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a class="menu-link" data-content-id="tools-animation">Анимация</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" data-content-id="tools-optimization">Оптимизация</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" data-content-id="tools-sandboxes">Песочницы</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" data-content-id="tools-templates">Шаблоны</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </sidebar>
+    <main class="main column">
+        <div class="main-title title" title="No Euclid, Just Eucalypt!">🐨</div>
+        <div id="main-material-html-css" class="main-content column">
+            <div class="main-item">
+                <div class="main-info column">
+                    <div class="main-date column">
+                        <span class="main-date__item date-day">Четверг</span>
+                        <span class="main-date__item date-dmy">28.11.2019</span>
+                    </div>
+                    <span class="main-info__from"><a href="https://t.me/Ivanischev_Ivan" target="_blank">Ivan Ivanischev</a></span>
+                </div>
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        Ребят, вам всем спасибо! Вы очень крутые и уже сильные, надеюсь моя инфа вам пригодится.<br>
+                        Держите темп, всем удачи и хороших выходных☘️
+                    </span>
+                    <a class="main-data__item data-link" href="https://docs.google.com/document/d/1kSRpixjOHEhPE_LXdZsuoqBLnktTvjNJcjKet3IjMMI/edit" target="_blank"></a>
+                    <a class="main-data__item data-link" href="https://habrahabr.ru/post/252279/" target="_blank"></a>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="main-info column">
+                    <div class="main-date column">
+                        <span class="main-date__item date-day">Вторник</span>
+                        <span class="main-date__item date-dmy">26.11.2019</span>
+                    </div>
+                    <span class="main-info__from"><a href="https://t.me/Ivanischev_Ivan" target="_blank">Ivan Ivanischev</a></span>
+                </div>
+                <div class="main-data column">
+                    <a class="main-data__item data-link" href="https://docs.google.com/document/d/17WwjikLKUGrg-pDUw2SuqscBpYxnxTTcWsIhbKlXgho/edit#" target="_blank"></a>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="main-info column">
+                    <div class="main-date column">
+                        <span class="main-date__item date-day">Четверг</span>
+                        <span class="main-date__item date-dmy">21.11.2019</span>
+                    </div>
+                    <span class="main-info__from"><a href="https://t.me/Ivanischev_Ivan" target="_blank">Ivan Ivanischev</a></span>
+                </div>
+                <div class="main-data column">
+                    <a class="main-data__item data-link" href="https://docs.google.com/document/d/1W8scwv2UzA_OVmpJL9oA4HSiP4BUkLV5YAk0ItQC7ig/edit?usp=sharing" target="_blank"></a>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="main-info column">
+                    <div class="main-date column">
+                        <span class="main-date__item date-day">Вторник</span>
+                        <span class="main-date__item date-dmy">19.11.2019</span>
+                    </div>
+                    <span class="main-info__from"><a href="https://t.me/Ivanischev_Ivan" target="_blank">Ivan Ivanischev</a></span>
+                </div>
+                <div class="main-data column">
+                    <a class="main-data__item data-link" href="https://habr.com/ru/post/418923/" target="_blank"></a>
+                    <a class="main-data__item data-link" href="https://docs.google.com/document/d/1UBc_ap-P_5uuvIyDO7X_ainJF-rO64DjYB389tD8wTM/edit" target="_blank"></a>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="main-info column">
+                    <div class="main-date column">
+                        <span class="main-date__item date-day">Вторник</span>
+                        <span class="main-date__item date-dmy">12.11.2019</span>
+                    </div>
+                    <span class="main-info__from"><a href="https://t.me/Ivanischev_Ivan" target="_blank">Ivan Ivanischev</a></span>
+                </div>
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        Ребят, вот ссылки на статьи, по материалу который сегодня был.<br>
+                        Кому интересно, можете пройтись и почитать.
+                    </span>
+                    <a class="main-data__item data-link" href="https://habr.com/ru/post/224187/" target="_blank"></a>
+                    <a class="main-data__item data-link" href="https://medium.com/web-standards/critical-css-39e479af038e" target="_blank"></a>
+                    <a class="main-data__item data-link" href="https://docs.google.com/document/d/1KgJAooTwHqbtK6JRI7FXm0F8gzaJnalvZP2PtVo6vBQ/edit?usp=sharing" target="_blank"></a>
+                    <a class="main-data__item data-link" href="https://code.tutsplus.com/ru/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank"></a>
+                    <a class="main-data__item data-link" href="https://idg.net.ua/blog/uchebnik-css/ispolzovanie-css/otnositelnyj-i-absolyutnyj-put-k-fajlu" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div id="additional-material-html-css" class="main-content column">
+            <div class="main-item">
+                <div class="main-info column">
+                    <div class="main-date column">
+                        <span class="main-date__item date-day">Пятница</span>
+                        <span class="main-date__item date-dmy">29.11.2019</span>
+                    </div>
+                    <span class="main-info__from"><a>Нго За Фат</a></span>
+                </div>
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Секреты CSS Идеальные решения ежедневных задач</span>
+                        <i>"Нашел интересную книгу, кому интересно, welcome"</i>
+                    </span>
+                    <a class="main-data__item data-link" href="https://firewall-e.github.io/learnix/storage/css-secrets-everydays-problem-solver.pdf" target="_blank"></a>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="main-info column">
+                    <div class="main-date column">
+                        <span class="main-date__item date-day">Четверг</span>
+                        <span class="main-date__item date-dmy">21.11.2019</span>
+                    </div>
+                    <span class="main-info__from"><a>Софья Кириленко</a></span>
+                </div>
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">SVG В Вебе - Практическое Руководство</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://svgontheweb.com/ru/" target="_blank"></a>
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Polygon feature design: SVG animations for fun and profit</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://product.voxmedia.com/2013/11/25/5426880/polygon-feature-design-svg-animations-for-fun-and-profit" target="_blank"></a>
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Using SVG</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://css-tricks.com/using-svg/" target="_blank"></a>
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">How To Solve Adaptive Images In Responsive Web Design</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://www.smashingmagazine.com/2013/06/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/" target="_blank"></a>
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">The ultimate SVG guide</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://psdtowp.net/svg.html" target="_blank"></a>
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Используем SVG на сайте</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://habr.com/ru/post/260645/" target="_blank"></a>
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Icon System with SVG Sprites</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/" target="_blank"></a>
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Inline SVG vs Icon Fonts</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://css-tricks.com/icon-fonts-vs-svg/" target="_blank"></a>
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">The offline cookbook</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://jakearchibald.com/2014/offline-cookbook/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div id="additional-material-javascript" class="main-content column">
+             <div class="main-item">
+                <div class="main-info column">
+                    <div class="main-date column">
+                        <span class="main-date__item date-day">Вторник</span>
+                        <span class="main-date__item date-dmy">03.12.2019</span>
+                    </div>
+                    <span class="main-info__from"><a>Дмитрий Коваленко</a></span>
+                </div>
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Полное понимание синхронного и асинхронного JavaScript с Async/Await</span>
+                    </span>
+                    <a class="main-data__item data-link" href="https://medium.com/@stasonmars/полное-понимание-синхронного-и-асинхронного-javascript-с-async-await-ba5f47f4436" target="_blank"></a>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="main-info column">
+                    <div class="main-date column">
+                        <span class="main-date__item date-day">Вторник</span>
+                        <span class="main-date__item date-dmy">26.11.2019</span>
+                    </div>
+                    <span class="main-info__from"><a>Высторопский Алексей</a></span>
+                </div>
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">E-Commerce JavaScript Tutorial - Shopping Cart from Scratch</span>
+                        Функционал корзины с нуля
+                    </span>
+                    <a class="main-data__item data-link" href="https://www.youtube.com/watch?v=023Psne_-_4" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div id="tools-animation" class="main-content column">
+            <div class="main-item">
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Animate.css</span>
+                        Набор готовых CSS анимаций
+                    </span>
+                    <a class="main-data__item data-link" href="https://daneden.github.io/animate.css/" target="_blank"></a>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">WOW.js</span>
+                        JavaScript библиотека для динамичной анимации
+                    </span>
+                    <a class="main-data__item data-link" href="https://wowjs.uk/" target="_blank"></a>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">GreenSock</span>
+                        Плагин для анимации всего, что поддерживается JavaScript: CSS свойств, SVG, React, canvas, generic objects и т.д.
+                    </span>
+                    <a class="main-data__item data-link" href="https://greensock.com/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div id="tools-sandboxes" class="main-content column">
+            <div class="main-item">
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Loupe</span>
+                        JavaScript песочница для наглядной демонстрации того, как call stack/ event loop/ callback queue взаимодействуют между собой
+                    </span>
+                    <a class="main-data__item data-link" href="http://latentflip.com/loupe/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div id="tools-optimization" class="main-content column">
+            <div class="main-item">
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Tiny PNG</span>
+                        Сервис сжатия .png и .jpg изображений
+                    </span>
+                    <a class="main-data__item data-link" href="https://tinypng.com/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div id="tools-templates" class="main-content column">
+            <div class="main-item">
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Email Framework</span>
+                        Фреймворк для создания отзывчивых (responsive) HTML email шаблонов
+                    </span>
+                    <a class="main-data__item data-link" href="https://emailframe.work/" target="_blank"></a>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="main-data column">
+                    <span class="main-data__item data-message">
+                        <span class="data-message__title">Bourbon</span>
+                        Библиотека миксов и функций на чистом SASS
+                    </span>
+                    <a class="main-data__item data-link" href="https://www.bourbon.io/" target="_blank"></a>
+                    <span class="main-data__item data-message">
+                        Материал по теме:
+                    </span>
+                    <a class="main-data__item data-link" href="http://prgssr.ru/development/nachinaem-rabotu-s-sass-i-bourbon.html" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <sidebar class="github sidebar column">
+        <div class="github-title title" data-text="GitHub"></div>
+        <div class="github-info">
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/wellshark" target="_blank">
+                    <span class="github-info__sur-name">Дмитрий Коваленко</span>
+                    <span class="github-info__uname">@wellshark</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/Telesheva" target="_blank">
+                    <span class="github-info__sur-name">Ирина Телешева</span>
+                    <span class="github-info__uname">@Telesheva</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/kirisona" target="_blank">
+                    <span class="github-info__sur-name">Софья Кириленко</span>
+                    <span class="github-info__uname">@kirisona</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/FireWall-e" target="_blank">
+                    <span class="github-info__sur-name">Слипченко Владислав</span>
+                    <span class="github-info__uname">@FireWall-e</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/Ann0403" target="_blank">
+                    <span class="github-info__sur-name">Cтарченко Анна</span>
+                    <span class="github-info__uname">@Ann0403</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/lukachi" target="_blank">
+                    <span class="github-info__sur-name">Нго За Фат</span>
+                    <span class="github-info__uname">@lukachi</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/gaidaianastasiia" target="_blank">
+                    <span class="github-info__sur-name">Гайдай Анастасия</span>
+                    <span class="github-info__uname">@gaidaianastasiia</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/LaAlexe" target="_blank">
+                    <span class="github-info__sur-name">Слисенко Света</span>
+                    <span class="github-info__uname">@LaAlexe</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/Dimatimmo" target="_blank">
+                    <span class="github-info__sur-name">Тимошенко Дмитрий</span>
+                    <span class="github-info__uname">@Dimatimmo</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/vzablodskiy1999" target="_blank">
+                    <span class="github-info__sur-name">Заблодский Валерий</span>
+                    <span class="github-info__uname">@vzablodskiy1999</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/SchVladyslav" target="_blank">
+                    <span class="github-info__sur-name">Щетина Владислав</span>
+                    <span class="github-info__uname">@SchVladyslav</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/elmir2232" target="_blank">
+                    <span class="github-info__sur-name">Мамедов Эльмир</span>
+                    <span class="github-info__uname">@elmir2232</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/iknowyoui11ia" target="_blank">
+                    <span class="github-info__sur-name">Прытков Илья </span>
+                    <span class="github-info__uname">@iknowyoui11ia</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/csyjxtr1999" target="_blank">
+                    <span class="github-info__sur-name">Высторопский Алексей</span>
+                    <span class="github-info__uname">@csyjxtr1999</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/YoungKoder" target="_blank">
+                    <span class="github-info__sur-name">Тесленко Максим</span>
+                    <span class="github-info__uname">@YoungKoder</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/vladshestakov" target="_blank">
+                    <span class="github-info__sur-name">Шестаков Влад</span>
+                    <span class="github-info__uname">@vladshestakov</span>
+                </a>
+            </div>
+            <div class="github-info__person">
+                <a class="github-info__link" href="https://github.com/AbramovNik" target="_blank">
+                    <span class="github-info__sur-name">Абрамов Никита</span>
+                    <span class="github-info__uname">@AbramovNik</span>
+                </a>
+            </div>
+        </div>
+    </sidebar>
+    <script>
+        console.log("Have a nice day, 👨‍💻 👩‍💻 !");const go={d:document.createElement("_"),eventBindAll:(e,t,n)=>{const s=document.querySelectorAll(e);for(e=0;e<s.length;e++)s[e].addEventListener(t,n)},get:e=>document.querySelector(e),getAll:e=>document.querySelectorAll(e)},navigateMenu=e=>{(e=e.target).classList.contains("selected")||(go.getAll(".menu-item.expand").forEach(t=>{t.contains(e)||(t.classList.remove("expand"),t.childNodes.forEach(e=>{e.classList&&e.classList.remove("selected")}))}),e.classList.add("selected"),e.parentElement.classList.add("expand"),(go.get(".main-content.show")||go.d).classList.remove("show"),(go.get(`#${e.dataset.contentId}`)||go.d).classList.add("show"))},navigateGithub=e=>{e=e.target,(e=Array.from(go.getAll(".github-info__sur-name")).find(t=>t.textContent===e.textContent))&&e.parentElement.click()};go.eventBindAll(".sidebar","click",e=>{(e=e.target.parentElement).classList.contains("sidebar")&&e.classList.toggle("expand")}),go.eventBindAll(".menu-link","click",navigateMenu),go.eventBindAll(".main-title","click",()=>{(go.get(".main-content.show")||go.d).classList.remove("show"),go.getAll(".menu-item.expand").forEach(e=>{e.classList.remove("expand"),e.childNodes.forEach(e=>{e.classList&&e.classList.remove("selected")})})}),go.eventBindAll(".main-info__from a","click",navigateGithub);
+    </script>
+</body>
+</html>

@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FutureDialog</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header Block Start -->
+    <header class="header">
+        <div class="header-company">
+            <span class="header-company__logo"></span>
+            <span class="header-company__name" data-moto="smart mobile dialogue">FutureDialog</span>
+        </div>
+        <div class="header-tools">
+            <div class="header-tools__left-block">
+                <button class="header-button header-button_type_search">
+                    <span class="header-button__icon"></span>
+                </button>
+            </div>
+            <div class="header-tools__right-block">
+                 <button class="header-button header-button_type_add-card header-button_size_large">
+                    <span class="header-button__sign">+</span>
+                    <span class="header-button__text">Add Card</span>
+                </button>
+                <button class="header-button header-button_type_calendar">
+                    <span class="header-button__icon"></span>
+                </button>
+                <button class="header-button header-button_type_notification">
+                    <span class="header-button__icon" data-badge="3"></span>
+                </button>
+            </div>
+        </div>
+        <div class="header-profile">
+            <div class="profile-info">
+                <span class="profile-info__username">Superadmin</span>
+                <span class="profile-info__location">Tampere / Tampereen Raati</span>
+            </div>
+            <div class="profile-settings">
+                <button class="header-button header-button_type_settings">
+                    <span class="header-button__icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Header Block End -->
+    <!-- Main Block Start -->
+    <main class="main">
+        <!-- Main Sidebar Start -->
+        <nav class="main-sidebar">
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                <span class="main-sidebar__text">Dashboard</span>
+            </a>
+            <a href="" class="main-sidebar__item main-sidebar__item_selected">
+                <span class="main-sidebar__icon"></span>
+                <span class="main-sidebar__text">Cards</span>
+            </a>
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                <span class="main-sidebar__text">Feedback</span>
+            </a>
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                <span class="main-sidebar__text">Open 311</span>
+            </a>
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                 <span class="main-sidebar__text">RSS Feed</span>
+            </a>
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                 <span class="main-sidebar__text">Analytics</span>
+            </a>
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                <span class="main-sidebar__text">Retention</span>
+            </a>
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                <span class="main-sidebar__text">Metrics</span>
+            </a>
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                <span class="main-sidebar__text">Targeting</span>
+            </a>
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                <span class="main-sidebar__text">Reports</span>
+            </a>
+            <a href="" class="main-sidebar__item">
+                <span class="main-sidebar__icon"></span>
+                <span class="main-sidebar__text">Users</span>
+            </a>
+        </nav>
+        <!-- Main Sidebar End-->
+        <!-- Main Card Content Start-->
+        <div class="main-card">
+            <div class="card-management">
+                <div class="card-management__left-block">
+                    <span class="card-management__title">Cards</span>
+                    <div class="management-activity">
+                        <input class="management-activity__checkbox" type="checkbox" name="activity">
+                        <span class="management-activity__text">Show only my activity</span>
+                    </div>
+                </div>
+                <div class="card-management__right-block">
+                    <button class="management-button">
+                        <span class="management-button__icon"></span>
+                        <span class="management-button__text">Languages</span>
+                    </button>
+                    <button class="management-button">
+                        <span class="management-button__icon"></span>
+                        <span class="management-button__text">Categories</span>
+                    </button>
+                    <button class="management-button management-button_type_add-card">
+                        <span class="management-button__icon"></span>
+                        <span class="management-button__text">Add card</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card-options">
+                <div class="options-relevance">
+                    <div class="options-relevance__item options-relevance__item_type_all options-relevance__item_selected">
+                        <span class="options-relevance__text">All Items</span>
+                        <span class="options-relevance__quantity">(299)</span>
+                    </div>
+                    <div class="options-relevance__item options-relevance__item_type_active">
+                        <span class="options-relevance__icon"></span>
+                        <span class="options-relevance__text">Active</span>
+                        <span class="options-relevance__quantity">(99)</span>
+                    </div>
+                    <div class="options-relevance__item options-relevance__item_type_scheduled">
+                        <span class="options-relevance__icon"></span>
+                        <span class="options-relevance__text">Scheduled</span>
+                        <span class="options-relevance__quantity">(23)</span>
+                    </div>
+                    <div class="options-relevance__item options-relevance__item_type_expired">
+                        <span class="options-relevance__icon"></span>
+                        <span class="options-relevance__text">Expired</span>
+                        <span class="options-relevance__quantity">(39)</span>
+                    </div>
+                    <div class="options-relevance__item options-relevance__item_type_archived">
+                        <span class="options-relevance__icon"></span>
+                        <span class="options-relevance__text">Archived</span>
+                        <span class="options-relevance__quantity">(39)</span>
+                    </div>
+                    <div class="options-relevance__item options-relevance__item_type_rss">
+                        <span class="options-relevance__icon"></span>
+                        <span class="options-relevance__text">From rss</span>
+                        <span class="options-relevance__quantity">(99)</span>
+                    </div>
+                    <div class="options-relevance__item options-relevance__item_type_displayed">Showing 1-20 of 299</div>
+                </div>
+                <div class="options-order">
+                    <div class="order-filter">
+                        <select class="order-filter__item">
+                            <option selected="selected">
+                                Filters
+                            </option>
+                        </select>
+                        <span class="order-filter__item order-filter__item_type_delimiter">:</span>
+                        <div class="order-filter__item filter-labels">
+                            <div class="filter-label filter-label_type_checked">
+                                <span class="filter-label__item filter-label__item_type_icon"></span>
+                                <span class="filter-label__item filter-label__item_type_text">Yes/No</span>
+                                <span class="filter-label__item filter-label__item_type_close-mark"></span>
+                            </div>
+                            <div class="filter-label filter-label_type_target-group">
+                                <span class="filter-label__item filter-label__item_type_icon"></span>
+                                <span class="filter-label__item filter-label__item_type_text">Age range 30–60</span>
+                                <span class="filter-label__item filter-label__item_type_close-mark"></span>
+                            </div>
+                            <div class="filter-label filter-label_type_category">
+                                <span class="filter-label__item filter-label__item_type_text">Newspaper</span>
+                                <span class="filter-label__item filter-label__item_type_close-mark"></span>
+                            </div>
+                        </div>
+                        <button class="order-filter__item filter-button">
+                            <span class="filter-button__icon filter-button__icon_trash-bin" data-tip="Clear all"></span>
+                        </button>
+                    </div>
+                    <div class="order-sort">
+                        <label class="order-sort__item">Sort By:</label>
+                        <select class="order-sort__item sort-select">
+                            <option selected="selected">
+                                Not selected
+                            </option>
+                        </select>
+                        <button class="order-sort__item sort-button sort-button_type_order">
+                            <span class="sort-button__icon"></span>
+                        </button>
+                        <button class="order-sort__item sort-button sort-button_type_search">
+                            <span class="sort-button__icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="options-folders">
+                    <div class="folder-block">
+                        <div class="folder-block__item folder-misc">
+                            <span class="folder-block__icon"></span>
+                            <input class="folder-block__checkbox" type="checkbox" name="folder">
+                        </div>
+                        <div class="folder-block__item folder-info">
+                            <span class="folder-info__name">Cards about parking</span>
+                            <span class="folder-info__quantity">0 cards</span>
+                        </div>
+                    </div>
+                    <div class="folder-block folder-block_selected">
+                        <div class="folder-block__item folder-misc">
+                            <span class="folder-block__icon"></span>
+                            <input class="folder-block__checkbox" type="checkbox" name="folder">
+                        </div>
+                        <div class="folder-block__item folder-info">
+                            <span class="folder-info__name">Helsinki Government</span>
+                            <span class="folder-info__quantity">23 cards</span>
+                        </div>
+                    </div>
+                    <div class="folder-block">
+                        <div class="folder-block__item folder-misc">
+                            <span class="folder-block__icon"></span>
+                            <input class="folder-block__checkbox" type="checkbox" name="folder">
+                        </div>
+                        <div class="folder-block__item folder-info">
+                            <span class="folder-info__name">Citizens</span>
+                            <span class="folder-info__quantity">999 cards</span>
+                        </div>
+                    </div>
+                    <div class="folder-block">
+                        <div class="folder-block__item folder-misc">
+                            <span class="folder-block__icon"></span>
+                            <input class="folder-block__checkbox" type="checkbox" name="folder">
+                        </div>
+                        <div class="folder-block__item folder-info">
+                            <span class="folder-info__name">Cards about parking</span>
+                            <span class="folder-info__quantity">0 cards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-list">
+                <div class="manage-element">
+                    <span class="manage-element__icon"></span>
+                    <div class="manage-element__buttons">
+                        <button class="manage-button manage-button_type_add-card">
+                            <span class="manage-button__icon"></span>
+                            <span class="manage-button__text">Add card</span>
+                        </button>
+                        <button class="manage-button manage-button_type_add-folder">
+                            <span class="manage-button__icon"></span>
+                            <span class="manage-button__text">Add folder</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_sweden"></span>
+                                    <span class="country-flags__icon country-flags__icon_finland"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_active"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Yes/No</span>
+                            </div>
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Helsinki group</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">18.09.17 at 15:58</span>
+                        <span class="bio-content">Airport Hotels The Right Way To Start A Short Break Holiday</span>
+                        <div class="bio-categories">
+                            <span class="bio-category">Travel</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                        <div class="card-info__block info-right">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Statistic</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notified</span>
+                            <span class="card-button__quantity">(1)</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-folder">
+                    <div class="folder-headline">
+                        <label class="folder-headline__item checkbox">
+                            <input class="checkbox__input" type="checkbox" name="item">
+                            <span class="checkbox__mark"></span>
+                        </label>
+                        <button class="folder-headline__button">
+                            <span class="folder-headline__icon"></span>
+                        </button>
+                    </div>
+                    <div class="folder-content">
+                        <span class="folder-content__icon"></span>
+                        <div class="folder-content__name folder-name">
+                            <span class="folder-name__text">Helsinki Government</span>
+                            <button class="folder-name__button">
+                                <span class="folder-name__icon"></span>
+                            </button>
+                        </div>
+                        <div class="folder-statistic">
+                            <span class="folder-statistic__quantity">23</span>
+                            <span class="folder-statistic__text">Cards inside</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                                <button class="flags-left__item card-bio__button">
+                                    <span class="card-bio__icon card-bio__icon_move-top" data-tip="Move to top"></span>
+                                </button>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_united-kingdom"></span>
+                                    <span class="country-flags__icon country-flags__icon_sweden"></span>
+                                    <span class="country-flags__icon country-flags__icon_finland"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_expired"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Short Answer</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">18.09.17 at 15:58–18.09.17 at 15:58</span>
+                        <span class="bio-content">Finally A Top Secret Way You Can Get Google Adwords Pay Per Clicks Free</span>
+                        <div class="bio-categories">
+                            <span class="bio-category">Advertising</span>
+                            <span class="bio-category">Technology</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                        <div class="card-info__block info-right">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Publish</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notifications</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                                <button class="flags-left__item card-bio__button">
+                                    <span class="card-bio__icon"></span>
+                                </button>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_united-kingdom"></span>
+                                    <span class="country-flags__icon country-flags__icon_sweden"></span>
+                                    <span class="country-flags__icon country-flags__icon_finland"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_active-show" data-tip="Active"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Info Card</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">18.09.17 at 15:58–18.09.17 at 15:58</span>
+                        <span class="bio-content">Free Real Estate Listings</span>
+                        <div class="bio-categories">
+                            <span class="bio-category">Advertising</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                        <div class="card-info__block info-right">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Statistic</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notifications</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                                <button class="flags-left__item card-bio__button">
+                                    <span class="card-bio__icon"></span>
+                                </button>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_united-kingdom"></span>
+                                    <span class="country-flags__icon country-flags__icon_sweden"></span>
+                                    <span class="country-flags__icon country-flags__icon_finland"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_archived"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Scale Range</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">18.09.17 at 15:58–18.09.17 at 15:58</span>
+                        <span class="bio-content">Motivation And Your Personal Vision An Unbeatable Force</span>
+                        <div class="bio-categories">
+                            <span class="bio-category">Motivation</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                        <div class="card-info__block info-right">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Statistic</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notified</span>
+                            <span class="card-button__quantity">(9)</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                                <button class="flags-left__item card-bio__button">
+                                    <span class="card-bio__icon"></span>
+                                </button>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_united-kingdom"></span>
+                                    <span class="country-flags__icon country-flags__icon_sweden"></span>
+                                    <span class="country-flags__icon country-flags__icon_finland"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_active"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Datepicker</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">18.09.17 at 15:58–18.09.17 at 15:58</span>
+                        <span class="bio-content">(2) American Standards And European Culture How To Avoid A Disappointing Vacation Experience While Traveling</span>
+                        <div class="bio-categories">
+                            <span class="bio-category">City</span>
+                            <span class="bio-category">Newspaper</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Statistic</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notifications</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                                <button class="flags-left__item card-bio__button">
+                                    <span class="card-bio__icon"></span>
+                                </button>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_united-kingdom"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_rss"></span>
+                                    <span class="relevance-flags__icon relevance-flags_type_expired"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Info Card</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">18.09.17 at 15:58</span>
+                        <span class="bio-content">Free Real Estate Listings</span>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                        <div class="card-info__block info-right">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Publish</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notifications</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                                <button class="flags-left__item card-bio__button">
+                                    <span class="card-bio__icon"></span>
+                                </button>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_united-kingdom"></span>
+                                    <span class="country-flags__icon country-flags__icon_sweden"></span>
+                                    <span class="country-flags__icon country-flags__icon_finland"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_active"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Datepicker</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">Jun 23, 2017 at 15:58–Jun 30, 2017 at 15:58</span>
+                        <span class="bio-content">American Standards and European Culture How To Avoid A Dissappointing Vacation Experience While Traveling</span>
+                        <div class="bio-categories">
+                            <span class="bio-category">City</span>
+                            <span class="bio-category">Newspaper</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Statistic</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notifications</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                                <button class="flags-left__item card-bio__button">
+                                    <span class="card-bio__icon"></span>
+                                </button>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_sweden"></span>
+                                    <span class="country-flags__icon country-flags__icon_finland"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_active"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Yes/No</span>
+                            </div>
+                            <div class="bio-label">
+                                <span class="bio-label__icon bio-label__icon_target-group" data-tip="Target group"></span>
+                                <span class="bio-label__text">Age Range 30–60</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">18.09.17 at 15:58</span>
+                        <span class="bio-content">Airport Hotels The Right Way To Start A Short Break Holiday</span>
+                        <div class="bio-categories">
+                            <span class="bio-category">Travel</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                        <div class="card-info__block info-right">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Statistic</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notified</span>
+                            <span class="card-button__quantity">(3)</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                                <button class="flags-left__item card-bio__button">
+                                    <span class="card-bio__icon"></span>
+                                </button>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_sweden"></span>
+                                    <span class="country-flags__icon country-flags__icon_finland"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_scheduled"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Choose</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">18.09.17 at 15:58–18.09.17 at 15:58</span>
+                        <span class="bio-content">Choosing The Best Audio Player Software For Your Computer</span>
+                        <div class="bio-categories">
+                            <span class="bio-category">Technology</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                        <div class="card-info__block info-right">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Statistic</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notifications</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list__item card-regular">
+                    <div class="card-bio">
+                        <div class="bio-flags">
+                            <div class="bio-flags__block flags-left">
+                                <label class="flags-left__item checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="item">
+                                    <span class="checkbox__mark"></span>
+                                </label>
+                                <button class="flags-left__item card-bio__button">
+                                    <span class="card-bio__icon"></span>
+                                </button>
+                            </div>
+                            <div class="bio-flags__block flags-right">
+                                <div class="flags-right__item country-flags">
+                                    <span class="country-flags__icon country-flags__icon_sweden"></span>
+                                    <span class="country-flags__icon country-flags__icon_finland"></span>
+                                </div>
+                                <div class="flags-right__item relevance-flags">
+                                    <span class="relevance-flags__icon relevance-flags_type_active"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio-labels">
+                            <div class="bio-label">
+                                <span class="bio-label__icon"></span>
+                                <span class="bio-label__text">Short Answer</span>
+                            </div>
+                        </div>
+                        <span class="bio-date">18.09.17 at 15:58–18.09.17 at 15:58</span>
+                        <span class="bio-content">Finally A Top Secret Way You Can Get Google Adwords Pay Per Clicks Free</span>
+                        <div class="bio-categories">
+                            <span class="bio-category">Advertising</span>
+                            <span class="bio-category">Technology</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info__block info-left">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">69</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">23</span>
+                            </div>
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                                <span class="card-info__text">Superadmin</span>
+                            </div>
+                        </div>
+                        <div class="card-info__block info-right">
+                            <div class="card-info__item">
+                                <span class="card-info__icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-button">
+                            <span class="card-button__icon card-button_type detail"></span>
+                            <span class="card-button__text">Detail</span>
+                        </button>
+                        <button class="card-button card-button_type_statistic">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Publish</span>
+                        </button>
+                        <button class="card-button card-button_type_notifications">
+                            <span class="card-button__icon"></span>
+                            <span class="card-button__text">Notifications</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-pagiantion">
+                <button class="card-pagiantion__item pagination-button">
+                    Load More
+                </button>
+                <span class="card-pagiantion__item pagiantion-delimiter">or</span>
+                <div class="card-pagiantion__item page-list">
+                    <span class="page-list__item page-list__item_selected">1</span>
+                    <span class="page-list__item">2</span>
+                    <span class="page-list__item">3</span>
+                    <span class="page-list__item">4</span>
+                    <span class="page-list__item">5</span>
+                    <span class="page-list__item page-ellipsis">...</span>
+                    <span class="page-list__item">23</span>
+                </div>
+            </div>
+        </div>
+        <!-- Main Card Content End -->
+        <!-- Main Scrollbar -->
+        <div class="main-scrollbar">
+            <span class="main-scrollbar__slider"></span>
+        </div>
+    </main>
+    <!-- Main Block End -->
+    <!-- Toolbar Panel Start -->
+    <div class="toolbar toolbar_active">
+        <div class="toolbar-selects">
+            <div class="toolbar-selects__item">
+                <input class="toolbar-selects__checkbox" type="checkbox" name="selects">
+                <label class="toolbar-selects__label">Select all visible</label>
+            </div>
+            <div class="toolbar-selects__item">
+                <span class="toolbar-selects__quantity">1</span>
+                <label class="toolbar-selects__label">Item selected</label>
+            </div>
+        </div>
+        <div class="toolbar-buttons">
+            <button class="toolbar-button">
+                <span class="toolbar-button__icon"></span>
+                <span class="toolbar-button__text">Publish</span>
+            </button>
+            <button class="toolbar-button">
+                <span class="toolbar-button__icon"></span>
+                <span class="toolbar-button__text">Archive</span>
+            </button>
+            <button class="toolbar-button">
+                <span class="toolbar-button__icon"></span>
+                <span class="toolbar-button__text">Dublicate</span>
+            </button>
+            <button class="toolbar-button">
+                <span class="toolbar-button__icon"></span>
+                <span class="toolbar-button__text">Folder</span>
+            </button>
+            <button class="toolbar-button">
+                <span class="toolbar-button__icon"></span>
+                <span class="toolbar-button__text">Target</span>
+            </button>
+            <button class="toolbar-button">
+                <span class="toolbar-button__icon"></span>
+                <span class="toolbar-button__text">Report</span>
+            </button>
+            <button class="toolbar-button">
+                <span class="toolbar-button__icon"></span>
+                <span class="toolbar-button__text">Export</span>
+            </button>
+            <button class="toolbar-button">
+                <span class="toolbar-button__icon"></span>
+                <span class="toolbar-button__text">Delete</span>
+            </button>
+        </div>
+        <span class="toolbar-tip">
+            <i class="toolbar-tip__cursive">shift+click</i> to select, <i class="toolbar-tip__cursive">esc</i> to deselect all
+        </span>
+    </div>
+    <!-- Toolbar Panel End -->
+</body>
+</html>
