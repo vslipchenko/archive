@@ -1,0 +1,1632 @@
+/**
+ * SSPA
+ */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+	/*background-color: rgba(10, 10, 10, 0.8);*/
+
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: 'Russo One', sans-serif;*/
+	font-size: 1.1vw;
+	color: gold; /*#FFD700*/
+}
+
+input {
+	color: inherit;
+	border: none;
+	outline: 0;
+	background-color: unset;
+	text-align: center;
+	font-family:inherit;
+	font-size: inherit;
+	text-overflow: ellipsis;
+}
+
+textarea {
+	color: inherit;
+	border: none;
+	border-radius: 0;
+	background-color: unset;
+	/*overflow: auto;*/
+    outline: 0;
+    box-shadow: none;
+    resize: none;
+    font-family:inherit;
+    /*font-size: inherit;*/
+}
+
+button {
+	width: 100%;
+	height: 100%;
+	color: gold;
+	background-color: unset;
+	outline: 0;
+	border-radius: 0;
+	padding: 0;
+	cursor: pointer;
+	border: 1px solid gold;
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.button_type_accept:after {
+	content: '✓';
+}
+
+.button_type_decline:after {
+	content: 'x';
+}
+
+.button_type_previous:after {
+	content: '⏮';
+}
+
+.button_type_next:after {
+	content: '⏭';
+}
+
+.button_type_play:after {
+	content: '⏵';
+}
+
+.button_type_pause:after {
+	content: '⏸';
+}
+
+.button_type_accept:active {
+	/*color: gold;*/
+	background-color: lime;
+}
+
+.button_type_decline:active {
+	/*color: rgba(10, 10, 10, 0.8);*/
+	background-color: red;
+}
+
+.indicator_offline,
+.indicator_online {
+	border-radius: 50%;
+	height: 0.6vw;
+	width: 0.6vw;
+	display: inline-block;
+	/*margin-left: 2%;*/
+	border: 1px solid gold;
+}
+
+.indicator_online {
+	background-color: lime;
+}
+
+/*.collection__header .button_type_accept:active {
+
+}
+
+.collection__header .button_type_decline:active {
+	background-color: tomato;
+}*/
+
+/*СДЕЛАТЬ DEFAULT ШРИФТ ДЛЯ TOP ROW IMPACT ИЛИ ДЛЯ ВСЕГО ADVENTURE-MODE*/
+
+/*ЧТО МОЖНО ОБОБЩИТЬ ? стили INPUT ?
+button нужен отделный фонт прописать ?*/
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Russo One', sans-serif;
+*/
+
+
+/**
+ * Common CSS
+ *
+ * Includes common elements styles
+ * Assigned by class selector
+ */
+
+/*Icon CSS*/
+
+.icon {
+	display: block;
+	height: 100%;
+	/*box-sizing: border-box;*/
+	background-size: 2vw 2vw;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Icon animations */
+
+.icon_animation_spin {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  -ms-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.image {
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*height: 100%;
+	width: 100%;*/
+}
+
+/* Button CSS */
+
+/* Theme CSS */
+/*button.theme_transparent:active,*/
+/*button.theme_gold_transparent:active,*/
+[class*="theme_gold"],
+.theme_gold_transparent:active,
+button[class*="theme_dark"]:active,
+[class*="go_get_collection"] .user-bar__button_icon_collection,
+[class*="go_get_social"] .user-bar__button_icon_social {
+	background-color: gold;
+	background-blend-mode: difference;
+	color: rgb(10, 10, 10);
+}
+
+/*[class*="theme_dark"],*/ /*need to change collections row style*/
+/*.theme_dark,*/
+[class*="theme_dark"],
+button.theme_gold:active {
+	background-color: rgba(10, 10, 10, 0.85);
+	color: gold;
+}
+
+.collection__content-row_type_image:hover .collection__image,
+.collection__content-row_type_image:hover .collection__image-border {
+	filter: opacity(60%);
+}
+
+/*.collection__content-row_type_image:active {
+	filter: opacity(60%);
+}*/
+.theme_gold_transparent {
+	background-color: unset;
+	color: gold;
+}
+
+/*button.theme_gold:active*/
+
+@media (hover: hover) {
+	/*button.theme_gold_transparent:hover, */
+	.theme_gold_transparent:hover,
+	button[class*="theme_dark"]:hover {
+		background-color: gold;
+		background-blend-mode: difference;
+		color: rgb(10, 10, 10);
+	}
+	button.theme_gold:hover {
+		background-color: rgba(10, 10, 10, 0.85);
+		color: gold;
+	}
+/*	.theme_gold_transparent:hover {
+
+	}*/
+}
+
+[class*="go_play_adventure-mode"] [class*="theme_dark"],
+[class*="go_play_adventure-mode"] .theme_gold {
+	background-color: unset;
+}
+
+[class*="go_play_adventure-mode"] .theme_dark,
+[class*="go_play_adventure-mode"] .theme_gold {
+	color: gold;
+	pointer-events: none;
+}
+
+.content_center,
+.items_center {
+	display: grid;
+}
+
+.content_center {
+	place-content: center;
+}
+
+.items_center {
+	place-items: center;
+}
+
+/**
+ * Main interface CSS
+ *
+ * Interface areas are:
+ * - interface-left
+ * - interface-right
+ * - interface-bottom
+ */
+
+.interface {
+	/*position: relative;*/
+	display: grid;
+	grid-template-areas: 'interface-left interface-right'
+	                     'interface-bottom interface-bottom';
+	grid-template-rows: 99% 1%;
+	grid-template-columns: 18% 81.5%;
+	grid-column-gap: 0.5%;
+	height: 100%;
+	/*z-index: auto;*/
+}
+
+/**
+ * Interface -> backgrounds CSS
+ *
+ * Contains additional backgrounds:
+ * - adventure-mode
+ */
+
+.backgrounds {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -2;
+}
+
+[class*="go_play_adventure-mode"] .backgrounds {
+	animation: live-background 90s infinite alternate;
+}
+
+@keyframes live-background {
+	from {
+		transform: scale(1);
+		/*transform: rotate3d(0deg);*/
+	}
+	to {
+		transform: scale(1.15);
+		/*transform: rotate3d(10deg);*/
+	}
+}
+
+.background {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	transition: opacity .5s;
+	opacity: 0;
+	z-index: -2;
+	background-color: rgb(10, 10, 10);
+	/*background-position-x: center;
+	background-position-y: center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: cover;*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.background__default {
+	opacity: 1;
+}
+
+.background__adventure-mode {
+	background-image: url(/app/main/view/media/images/profile/user_profile_adventure_mode_full_background.jpg);
+}
+
+[class*="go_play_adventure-mode"] .background__adventure-mode {
+	z-index: -1;
+	opacity: 1;
+}
+
+/**
+ * Interface -> interface-left CSS
+ *
+ * Interface-left areas are:
+ * - user-card
+ * - game-modes
+ */
+
+.interface-left {
+	grid-area: interface-left;
+	display: grid;
+/*	grid-template-areas: 'user-card' 
+						 'game-modes';*/
+	grid-template-rows: [user-card] 42.5% 
+						[game-modes] 46.3%
+						[wiki-player] 9%;
+	grid-row-gap: 1.1%;
+}
+
+/**
+ * Interface-left -> user-card area CSS
+ *
+ * Consists of 2 sides :
+ * - front
+ * - back
+ */
+
+/**
+ * User-card -> front part CSS
+ *
+ * Front part areas are:
+ * - user image
+ * - username
+ */
+
+ .user-card {
+	/*background-color: gold;*/
+	display: grid;
+	border-right: 1px solid gold;
+	border-bottom: 1px solid gold;
+	transition: 0.4s;
+	transform-style: preserve-3d;
+	cursor: pointer;
+}
+
+.user-card.flip {
+	transform: rotateY(180deg);
+}
+
+.user-card__front {
+	display: grid;
+	grid-template-rows: [user-card__image] 85% 
+						[user-card__username] 15%;
+	/*height: 100%;*/
+	grid-row: 1;
+	grid-column: 1;
+	transform: rotateY(0deg);
+}
+
+/*.user-card__image {*/
+/*	width: 100%;
+	height: 100%;*/
+	/*background-size: 100% 100%;*/
+/*}*/
+
+/*.user-card__username {
+	place-self: center;*/
+	/*color: rgba(10, 10, 10, 0.8);*/
+/*}*/
+
+.user-card__back {
+	transform: rotateY(180deg);
+	grid-row: 1;
+	grid-column: 1;
+	display: grid;
+}
+
+.user-card__front,
+.user-card__back {
+	backface-visibility: hidden;
+}
+
+.user-card__back-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.user-card__icon {
+	background-size: 3.5vw 3.5vw;
+}
+
+.user-card__icon_level {
+	background-image: url(/app/main/view/media/icons/profile/user-card/level.png);
+}
+
+.user-card__icon_attack {
+	background-image: url(/app/main/view/media/icons/profile/user-card/attack.png);
+}
+
+.user-card__icon_defense {
+	background-image: url(/app/main/view/media/icons/profile/user-card/defense.png);
+}
+
+.user-card__icon_health {
+	background-image: url(/app/main/view/media/icons/profile/user-card/health.png);
+}
+
+.user-card__icon_mana {
+	background-image: url(/app/main/view/media/icons/profile/user-card/mana.png);
+}
+
+[class^="user-card__stat"] {
+	place-self: center;
+}
+
+/**
+ * Interface-left -> game-modes area CSS
+ *
+ * Game-modes elements are: 
+ * - adventure-mode
+ */
+
+.game-modes {
+	/*grid-row: game-modes;*/
+	display: grid;
+	grid-auto-rows: 12.92%;
+	grid-row-gap: 2%;
+}
+
+.game-modes__adventure-mode {
+	display: grid;
+	grid-template-columns: [game-modes__icon] 16.5% [game-modes__button] 81%;
+	grid-column-gap: 2.5%;
+}
+
+.game-modes__icon {
+	border: 1px solid gold;
+	border-left: none;
+}
+
+/*.game-modes__icon .icon {
+	border: none;
+}*/
+
+.game-modes__icon_adventure-mode {
+	background-image: url(/app/main/view/media/icons/profile/user_profile_adventure_mode.png);
+}
+
+.wiki-music {
+	width: 103%;
+	border-top: 1px solid gold;
+	cursor: pointer;
+}
+
+.wiki-music__controls {
+	height: 100%;
+	display: none;
+}
+
+.wiki-music_state_play, 
+.wiki-music__controls {
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+}
+
+.wiki-music__icon_type_default {
+	background-size: 4.5vw 2vw;
+	background-image: url(/app/main/view/media/icons/profile/wiki-music.png);
+}
+
+.social__icon_type_search,
+.wiki-music_state_search .wiki-music__icon_type_default {
+	background-size: 2.5vw 2.5vw;
+	background-image: url(/app/main/view/media/icons/profile/loupe.png);
+}
+
+.social__button,
+.collection__header_type_media .collection__button,
+.wiki-frame__iframe,
+.wiki-music__button {
+	border: none;
+}
+
+.wiki-music__timer {
+	place-self: center;
+}
+
+/*.wiki-music_state_play .wiki-music__icon_type_default,*/
+.wiki-music__timer,
+.wiki-music_state_play:hover .wiki-music__icon,
+.wiki-music_state_play:hover .wiki-music__timer {
+	display: none;
+}
+
+.wiki-music_state_play .wiki-music__timer {
+	display: block;
+}
+
+.wiki-music_state_play,
+.wiki-music_state_play:hover .wiki-music__controls {
+	display: grid;
+}
+
+/**
+ * Interface -> interface-right CSS
+ *
+ * Interface-right areas are:
+ * - top-part-1
+ * - top-part-2
+ * - bottom-part
+ */
+
+.interface-right {
+	grid-area: interface-right;
+	display: grid;		/*top-screen = top-screen-1 + top-screen-2*/
+	grid-template-areas: 'interface-right__top-part-1' 
+						 'interface-right__top-part-2'
+						 'bottom-part';
+	grid-template-rows: [interface-right__top-part-1] 5.94% 
+						[interface-right__top-part-2] 35.46% 
+						[bottom-part] 56.4%;
+	grid-row-gap: 1.1%;
+}
+
+.interface-right__row-1 {
+	grid-row: interface-right__top-part-1 / interface-right__top-part-2;
+	grid-column: 1;
+	display: grid;
+	grid-template-areas: 'top-bar' 
+						 'action-screen-piece';
+	grid-template-rows: [top-bar] 14% 
+						[action-screen-piece] 86%;
+}
+
+/**
+ * Interface-right -> top-part CSS
+ *
+ * Top-part areas are:
+ * - user-bar
+ * - controls
+ */
+
+.top-bar {
+	grid-area: top-bar;
+	display: grid;
+	/*grid-template-areas: 'user-bar controls';	*/
+	grid-template-columns: [user-bar] 1fr [controls] 1fr;
+	transition: opacity .3s;
+	opacity: 1;
+	/*order: 1;*/
+	z-index: 1;
+}
+
+[class*="go_play"] .top-bar {
+	pointer-events: none;
+	opacity: 0;
+}
+
+.user-bar,
+.controls {
+	display: grid;
+	grid-auto-flow: column;
+}
+
+/* User-bar CSS */
+
+.user-bar {
+	grid-auto-columns: 0.0736fr;
+	grid-column-gap: 1.1%; 
+}
+
+.user-bar__button {
+	border-top: none;
+}
+
+.user-bar__button_icon_social {
+	background-image: url(/app/main/view/media/icons/profile/user_profile_friendlist.png);
+}
+
+.user-bar__button_icon_collection {
+	background-image: url(/app/main/view/media/icons/profile/user_collection.png);
+}
+
+@keyframes theme_gold_loading {
+	to {
+		/*background-size: 1.8vw 1.8vw;*/
+		background-color: rgba(10, 10, 10, 0.85);
+	}
+}
+
+.go_get_collection_state_loading .user-bar__button_icon_collection,
+.go_get_social_state_loading .user-bar__button_icon_social {
+	animation: theme_gold_loading 1.3s infinite alternate;
+}
+
+/* Controls CSS */
+
+.controls {
+	grid-auto-columns: 0.069fr;
+/*	grid-template-areas: 'empty'
+						 'controls';*/
+	grid-template-rows: [empty] 19% 
+						[controls] 81%;
+	justify-content: end;
+}
+
+.controls__button_type_logout {
+	grid-row: controls;
+	border-right: none;
+}
+
+/**
+ * Interface-right -> action-screen CSS
+ *
+ * Action-screen elements are:
+ * - adventure-mode
+ */
+
+.action-screen {
+	grid-row: top-bar / action-screen-piece;
+	grid-column: 1;
+}
+
+/**
+ * Action-screen -> adventure-mode CSS 
+ *
+ * Adventure-mode areas are:
+ * - top-row
+ * - master-row
+ */
+
+.adventure-mode {
+	display: grid;
+	grid-template-rows: [gap] 2.4% 
+						[adventure-mode__top-row] 11.6% 
+						[adventure-mode__master-row] 86%;
+	height: 100%;
+	transition: opacity .5s;
+	opacity: 0;
+	/*visibility: hidden;*/
+	pointer-events: none;
+}
+
+[class*="font_jura"] {
+	font-family: 'Jura', sans-serif;
+}
+
+[class*="font_pressuru"] {
+	font-family: 'PressuruRegular';
+	letter-spacing: 0.05vw;
+}
+
+.font_russo-one {
+	font-family: 'Russo One', sans-serif;
+}
+
+/*font-family: 'PressuruRegular';*/
+.font_size_small {
+	font-size: 0.8vw;
+}
+
+.font_size_large,
+.font_pressuru_size_large {
+	font-size: 1.7vw;
+}
+
+.font_pressuru_size_medium {
+	font-size: 1.4vw;
+}
+
+.font_size_regular,
+.font_jura_size_regular,
+.font_pressuru_size_regular {
+	font-size: 1.3vw;
+	/*letter-spacing: 0.02vw;*/
+}
+
+[class*="go_play_adventure-mode"] .adventure-mode {
+	opacity: 1;
+	pointer-events: auto;
+	/*visibility: visible;*/
+}
+
+.adventure-mode__button {
+	border-bottom: none;
+}
+
+/**
+ * Each area consists of 4 columns, each column consists of 2 quarters
+ *
+ * Each game level has its own areas template
+ * 
+ */
+
+.adventure-mode__static-content,
+.adventure-mode__top-row,
+.adventure-mode__fluid-content {
+	display: grid;
+	/*grid-template-areas: 'quarter-1 quarter-2 quarter-3 quarter-4';*/
+	grid-template-columns: [quarter-1] 1fr [quarter-2] 1fr [quarter-3] 1fr [quarter-4] 1fr;
+}
+
+.go_play_adventure-mode_state_walkthrough .adventure-mode__top-row,
+.go_play_adventure-mode_state_walkthrough .adventure-mode__fluid-content {
+	/*grid-template-areas: 'quarter-3 quarter-2 quarter-1 quarter-4';*/
+	grid-template-columns: [quarter-3] 1fr [quarter-2] 1fr [quarter-1] 1fr [quarter-4] 1fr;
+}
+
+.go_play_adventure-mode_state_auto .adventure-mode__reward,
+.go_play_adventure-mode_state_auto .adventure-mode__reward-title,
+.go_play_adventure-mode_state_intro .adventure-mode__reward,
+.go_play_adventure-mode_state_intro .adventure-mode__reward-title {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.go_play_adventure-mode_state_finish .adventure-mode__top-row {
+	grid-template-columns: [quarter-3] 1fr [quarter-1] 1fr [quarter-2] 1fr [quarter-4] 1fr;
+}
+
+/* Adventure-mode columns CSS */
+
+.adventure-mode__column-1,
+.adventure-mode__column-2,
+.adventure-mode__column-3 {
+	grid-row: 1;
+	display: grid;
+	overflow: hidden;
+}
+
+.adventure-mode__column-1 {
+	/*order: 1;*/
+	grid-column: quarter-1 / span 2;
+}
+
+.adventure-mode__column-2 {
+	/*order: 1;*/
+	grid-column: quarter-3 / span 2;
+}
+
+/*FIX SVG TEXT VERTICAL POSITION*/
+.adventure-mode__top-row .adventure-mode__column-2 {
+	margin-top: -0.25%; 
+}
+
+.adventure-mode__column-3 {
+	z-index: -1;
+	grid-column: quarter-2 / span 2;
+/*	opacity: 0;
+	pointer-events: none;*/
+}
+
+.go_play_adventure-mode_state_finish .adventure-mode__column-3 {
+	z-index: auto;
+}
+
+/**
+ * Adventure-mode -> top-row CSS
+ * 
+ * Consists of 3 columns
+ */
+
+.adventure-mode__top-row {
+	/*font-size: 1.7vw;*/
+	grid-row: adventure-mode__top-row;
+}
+
+.go_play_adventure-mode_state_walkthrough .adventure-mode__top-row {
+	cursor: pointer;
+}
+
+.adventure-mode__top-row .adventure-mode__column-1 {
+	/*grid-auto-flow: column;*/
+	grid-template-areas: 'adventure-mode__controls adventure-mode__constellation-name-input';
+	grid-template-columns: [adventure-mode__controls] 20% [adventure-mode__constellation-name-input] 80%;
+	/*grid-template-columns: [adventure-mode__controls] 0.165fr [adventure-mode__constellation-name-input] 1fr;*/
+	/*order: 1;*/
+}
+
+.adventure-mode__controls {
+	grid-row: 1;
+	grid-column: adventure-mode__controls;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+	/*pointer-events: none;*/
+	/*order: 1;*/
+	opacity: 0;
+	transition: opacity .15s;
+	pointer-events: none;
+}
+
+.go_play_adventure-mode_state_intro .adventure-mode__controls {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.adventure-mode__button_type_random {
+	background-image: url(/app/main/view/media/icons/profile/dice.png);
+	background-size: 1.6vw 1.6vw;
+}
+
+.adventure-mode__constellation-name-input {
+	grid-row: 1;
+	grid-column: adventure-mode__controls / adventure-mode__constellation-name-input;
+	overflow: hidden;  /*SVG FIX*/ /*MAYBE REMOVE*/
+	pointer-events: none;
+}
+
+.go_play_adventure-mode_state_intro .adventure-mode__constellation-name-input {
+	pointer-events: auto;
+}
+
+
+/*MOBILE FIX*/
+/*.go_play_adventure-mode_state_walkthrough .adventure-mode__top-row .adventure-mode__column-1,
+.go_play_adventure-mode_state_finish .adventure-mode__top-row .adventure-mode__column-1 { 
+	pointer-events: none;
+}*/
+
+.adventure-mode__reward-title {
+	grid-row: 1;
+	grid-column: 1;
+	place-self: center;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.adventure-mode__phase {
+	grid-row: 1;
+	grid-column: 1;
+	place-self: center;
+	opacity: 0;
+}
+
+.go_play_adventure-mode_state_walkthrough .adventure-mode__phase {
+	opacity: 1;
+}
+
+/**
+ * Adventure-mode -> master-row CSS
+ * 
+ * Consists of 2 containters:
+ * - For a fluid content
+ * - For a static one
+ *
+ * Each container divided into 3 columns
+ */
+
+.adventure-mode__master-row {
+	grid-row: adventure-mode__master-row;
+	display: grid;
+	/*grid-template-areas: 'adventure-mode__fluid-content'
+						 'adventure-mode__static-content';*/
+	grid-template-rows: [adventure-mode__fluid-content] 83.5% 
+						[adventure-mode__static-content] 16.5%;
+	border: 1px solid gold;
+	border-right: none;
+}
+
+.adventure-mode__constellation {
+	grid-row: 1;
+	grid-column: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.go_play_adventure-mode_state_finish .adventure-mode__constellation,
+.go_play_adventure-mode_state_walkthrough .adventure-mode__constellation {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.adventure-mode__star_animation_pulse {
+	animation: pulse 5s infinite alternate;
+}
+
+@keyframes pulse {
+	 0%, 100% {
+        stroke-width: 0.6%;
+		stroke-opacity: 1;
+	 }
+	 25%, 75% {
+	 	stroke-width: 0.7%;
+	 	stroke-opacity: 0.75;
+	 }
+	 50% {
+	 	stroke-width: 0.8%;
+	 	stroke-opacity: 0.5;
+	 	stroke:gold;		
+	 }
+}
+
+.adventure-mode__task {
+	grid-row: 1;
+	grid-column: 1;
+	display: grid;
+	grid-template-rows: /*[gap] 1%*/
+						/*[adventure-mode__task-label] 12%*/
+						[adventure-mode__task-output] 65%
+						[gap] 35%;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.go_play_adventure-mode_state_walkthrough .adventure-mode__task {
+	opacity: 1;
+	pointer-events: auto;
+	/*pointer-events: initial;*/
+}
+
+.adventure-mode__task-output {
+	/*grid-row: adventure-mode__task-output; */
+	/*border-top: none;*/
+	border-bottom: 1px solid gold;
+}
+
+.adventure-mode__reward {
+	/*height: 100%;*/
+	grid-row: 1;
+	grid-column: 1;
+	display: grid;
+	grid-template-rows: [adventure-mode__reward-image] 1fr
+						[adventure-mode__reward-list] 1fr;
+	/*grid-auto-rows: 1fr;*/
+	/*place-items: center;*/
+	pointer-events: none;
+	opacity: 0;
+}
+
+.adventure-mode__answer {
+	grid-row: 1;
+	grid-column: 1;
+	display: grid;
+	grid-template-rows: [adventure-mode__answer-input] 65% 
+						[adventure-mode__answer-stats] 35%;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.go_play_adventure-mode_state_walkthrough .adventure-mode__answer {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/*.adventure-mode__answer-label {
+	margin-left: 0.3%;
+	align-self: center;
+	grid-row: adventure-mode__answer-label;
+}*/
+.adventure-mode__answer-input,
+.adventure-mode__task-output {
+	/*padding: 1%;*/
+	padding: 0.5% 1% 0.5% 1%;
+}
+
+.adventure-mode__answer-input {
+	/*border-top: none;*/
+	border-bottom: 1px solid gold;
+	border-right: 1px solid gold;
+	/*grid-row: adventure-mode__answer-input;*/
+}
+
+.adventure-mode__answer-stats,
+.social__friend-name {
+	margin-left: 1%;
+}
+
+.adventure-mode__answer-stats {
+	/*margin-left: 1%;*/
+	align-self: center;
+	/*grid-row: adventure-mode__answer-stats;*/
+}
+
+.adventure-mode__image {
+	/*justify-self: center;*/
+	font-size: 1.7vw;
+	border: 1px solid gold;
+	border-top: none;
+	width: 18.5%;
+	height: 100%;
+}
+
+.adventure-mode__continue-loading,
+.adventure-mode__continue-value {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+.adventure-mode__continue-loading {
+	opacity: 0;
+}
+
+.adventure-mode__static-content .adventure-mode__column-1 {
+	/*display: grid;*/
+	/*order: 1;*/
+	grid-auto-flow: column;
+	grid-template-columns: [gap] 37.5% [adventure-mode__button_type_main] 25% [gap] 37.5%;
+}
+
+.adventure-mode__button_type_main {
+	grid-column: adventure-mode__button_type_main;
+}
+
+.go_play_adventure-mode_state_finish .adventure-mode__button_type_main {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.adventure-mode__finish {
+	opacity: 0;
+	pointer-events: none
+}
+
+.go_play_adventure-mode_state_finish .adventure-mode__finish-buttons,
+.go_play_adventure-mode_state_finish .adventure-mode__finish {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.adventure-mode__finish-buttons {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.adventure-mode__button_type_accept,
+.adventure-mode__button_type_decline {
+	grid-row: 1;
+	/*width: 100%;*/
+}
+
+.adventure-mode__button_type_accept {
+	justify-self: left;
+	grid-column: 2;
+/*	background-color: gold;
+	color: rgba(10, 10, 10, 0.8);*/
+	border-right: none;
+}
+
+.adventure-mode__button_type_decline {
+	border-left: none;
+	justify-self: right;
+	grid-column: 3;
+}
+
+/**
+ * Interface-right -> bottom-part CSS
+ *
+ * Bottom-part elements are:
+ * - wiki-frame
+ */
+
+.interface-right__row-2 {
+	grid-row: interface-right__top-part-2 / bottom-part;
+	/*grid-area: bottom-part;*/
+	grid-column: 1;
+	display: grid;
+	/*grid-template-rows: [wiki-frame] 1fr [collection] 0fr;*/
+	transition: 2s;
+	border-top: 1px solid gold;
+	border-left: 1px solid gold;
+}
+
+[class*="go_play"] .interface-right__row-2 {
+	grid-area: bottom-part;
+}
+
+.wiki-frame {
+	/*position: relative;*/
+	z-index: 1;
+	grid-row: 1;
+	grid-column: 1;
+	transition: 1s;
+	height: 100%;
+}
+
+.wiki-frame__iframe {
+	/*border: none;*/
+/*	border-top: 1px solid gold;
+	border-left: 1px solid gold;*/
+	width: 100%;
+	height: 100%;
+}
+
+[class*="go_get"] .wiki-frame {
+	height: 0%;
+}
+
+.social,
+.collection,
+.collection__header_type_media .button_type_accept,
+.collection__button_type_as-image {
+	grid-row: 1;
+	grid-column: 1;
+}
+
+/* {
+	border: none;
+}*/
+
+/*.collection__header_type_media .button_type_accept {
+
+}*/
+
+ .collection__media {
+	border-left: 1px solid gold;
+}
+/*
+.collection_border_inventory .collection__header_type_inventory,
+.collection_border_inventory .collection__inventory-content .collection__content-row {
+	border-right: 1px solid gold;
+}*/
+
+
+/*social overflow:hidden;*/
+.social,
+.collection__inventory,
+.collection__media {
+	display: grid;
+	grid-template-rows: 8% 1fr;
+}
+
+.social,
+.collection {
+	opacity: 0;
+
+	/*overflow-y: scroll;
+	overflow-x: hidden;*/
+	pointer-events: none;
+}
+/**/
+.collection .theme_gold_transparent:hover,
+.collection .const_theme_gold {
+	border-top: 1px solid rgb(10, 10, 10);
+}
+
+.collection__image-container .const_theme_gold {
+	border-top: 1px solid gold;
+}
+
+[class*="go_get_social"] .social,
+[class*="go_get_collection"] .collection {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.collection,
+.collection__header_type_inventory .collection__right-cell {
+	/*grid-row: headers;*/
+	/*grid-column: 1 / 2;*/
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+	/*height: 100%;
+	width: 100%;*/
+}
+
+/*.collection__wikoin {
+	
+}*/
+
+.collection__header_type_inventory {
+	/*place-self: center;*/
+	/*height: 100%;
+	width: 100%;*/
+	display: grid;
+	/*grid-auto-flow: column;*/
+	grid-template-columns: 80% 20%;
+}
+
+.collection__wikoin-quantity {
+	align-self: center;
+	justify-self: end;
+}
+
+.collection__wikoin-icon {
+	background-size: 1.5vw 1.5vw;
+	background-image: url(/app/main/view/media/icons/profile/wikoin.png);
+}
+
+.social__dialogue-messages,
+.collection__content {
+	overflow-y: auto;
+	/*overflow-x: hidden;*/
+	/*scrollbar-width: thin;
+	scrollbar-color: gold #1111;*/
+}
+
+.collection__content-row {
+	display: grid;
+	/*grid-auto-flow: column;*/
+	/*place-items: center;*/
+	grid-template-columns: 90% 10%;
+	border: none;
+	height: 7%;
+	width: 100%;
+}
+
+.collection__header,
+.collection__content-row  {
+	border-bottom: 1px solid gold;
+}
+
+.collection__content-row_empty {
+	pointer-events: none;
+	opacity: .5;
+}
+
+.collection [class*="group_"] {
+	display: none;
+}
+
+.collection__content-row_type_symdiglet,
+.collection__content-row_type_image {
+	grid-template-columns: 1fr 1fr;
+}
+
+.collection__content-row_type_image {
+	grid-template-columns: 4% 92% 4%;
+	height: 45%;
+}
+
+.social__tab-text,
+.collection__left-cell,
+.collection__center-cell,
+.collection__right-cell {
+	place-self:center;
+	/*border-right: 1px solid gold;*/
+}
+
+.collection__header_type_media .title,
+.collection__image,
+.collection__center-cell {
+	/*width: 100%;
+	height: 100%;*/
+	grid-row: 1;
+	grid-column: 1 / span 2;
+	/*place-self:center;*/
+}
+
+.collection__header_type_media .button_type_decline,
+.collection__button_type_as-background,
+.collection__right-cell {
+	/*width: 100%;
+	height: 100%;*/
+	grid-row: 1;
+	grid-column: 2;
+	/*place-self:center;*/
+}
+
+/*.collection__image {*/
+	/*display: block;*/
+	/*background-size: 100% 100%;
+	height: 100%;
+	width: 100%;*/
+/*	grid-row: 1;
+	grid-column: 1 / span 2;*/
+/*}*/
+
+.collection__header_type_media,
+.collection__image-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+/*.collection__media-title {
+	grid-row: 1;
+	grid-column: 1 / span 2;
+}*/
+
+.collection__image-border {
+	background-image: url(/app/main/view/media/icons/profile/tape.png);
+	background-position: center;
+	background-size: 120% 10%;
+}
+
+.collection__header_type_inventory .collection__right-cell {
+	width: 100%;
+	height: 100%;
+}
+
+.theme_gold_transparent .collection__right-cell::after {
+	content: '▼';
+}
+
+.const_theme_gold .collection__right-cell::after {
+	content: '▲';
+}
+
+.go_get_collection_state_tryon .collection__header_type_media .title,
+.collection__button {
+	display: none;
+}
+
+.collection__image-container .collection__button {
+	z-index: 0;
+	height: 20%;
+	width: 50%;
+	align-self: center;
+	background-size: 3vw 3vw;
+}
+
+/*.collection__header_type_media {
+	display: grid;
+}*/
+.go_get_collection_state_tryon .collection__header_type_media .collection__button,
+.collection__content-row_type_image:hover .collection__button {
+	display: block;
+}
+
+.collection__button_type_as-image {
+	border-right: none;
+	justify-self: end;
+	/*grid-row: 1;
+	grid-column: 1;*/
+	background-image: url(/app/main/view/media/icons/profile/avatar_blank.png);
+}
+
+.collection__button_type_as-background {
+	/*grid-row: 1;
+	grid-column: 2;*/
+	background-image: url(/app/main/view/media/icons/profile/background_blank.png);
+}
+
+
+.social__header {
+	display: grid;
+	/*grid-auto-flow: column;*/
+	grid-template-columns: 65% 35%;
+}
+
+.social__tabs {
+	display: grid;
+	/*grid-auto-flow: column;*/
+	grid-auto-columns: 12%;
+}
+
+.social__border {
+	background-color: gold;
+}
+
+.social__tab {
+	display: grid;
+	grid-template-columns: 13% 87%;
+}
+
+.social__search {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 15% 85%;
+}
+
+.social__icon_type_search {
+	background-size: 2vw 2vw;
+}
+
+/*CANT SET IT FOR ALL INPUTS BECAUSE OF SVG ADV MODE*/
+/*.social__search-input {
+	height: 100%;
+	width: 100%;
+}
+*/
+/*.social__content {
+	height: 100%;
+}*/
+
+.social__friend-list {
+	/*height: 100%;*/
+	display: grid;
+	grid-auto-rows: 15%;
+	border-right: 1px solid black;
+	/*border-right: 1px solid gold;*/
+}
+
+/*.social__list {
+	
+}
+*/
+.social__friends {
+	height: 100%;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 35% 65%;
+}
+
+.social__friend-list .social__row {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 2.9% 23% 1fr;
+	border-bottom: 1px solid black;
+	border-right: 1px solid gold;
+}
+
+/*.social__button {
+	border: none;
+}
+*/
+.social__extra-block .social__icon,
+.social__extra-block .social__button {
+	width: 10%;
+}
+
+.social__icon_type_new-message {
+	/*grid-row: 2;
+	grid-column: 1;*/
+	/*background-size: 1.4vw 1.4vw;*/
+	/*justify-self: start;*/
+	/*animation: theme_gold_blinging 1s infinite alternate;*/
+	background-size: 1.4vw 1.4vw;
+	background-image: url(/app/main/view/media/icons/profile/new_message.png);
+}
+
+.social__button_type_unfriend {
+	/*justify-self: end;*/
+	margin-left: auto;
+	background-size: 1.4vw 1.4vw;
+	background-image: url(/app/main/view/media/icons/profile/bye-bye.png);
+}
+
+.social__extra-row-2 {
+	display: inline-flex;
+}
+
+.social__extra-block {
+	padding: 2%;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.social__dialogue {
+	display: grid;
+	grid-template-rows: 80% 20%;
+}
+
+.social__dialogue-messages {
+	display: grid;
+	grid-row-gap: 1%;
+	/*grid-template-rows: repeat(auto-fit, minmax(0, max-content));*/
+	align-content: baseline;
+	height: 437px; /*DELETE*/
+	/*overflow-y: auto;*/
+}
+
+/*.social__dialogue-message_type_received {
+}*/
+
+/*.social__dialogue-message_type_received:after {
+	display: block;
+    content: '';
+    width: 0;
+    height: 0;
+}*/
+.social__message-box_type_from {
+	justify-self: baseline;
+	/*box-shadow: 3px 3px 3px 0px rgb(30,30,30);*/
+}
+
+.social__message-box_type_to {
+	/*grid-column: 2;*/
+	justify-self: end;
+}
+
+.social__dialogue-message {
+	/*display: block;*/
+	word-break: break-all;
+	/*width: 50%;*/
+}
+
+@keyframes message-queue {
+	to {
+		border-color: indigo;
+	}
+}
+
+.social__message-box_animation_message-queue {
+	border-left: 1px solid cyan;
+	animation: message-queue 2s infinite alternate;
+}
+
+.social__message-box {
+	padding: 1%;
+	background-color: rgba(10, 10, 10, 0.7);
+	min-width: min-content;
+	max-width: 75%;
+	display: grid;
+}
+
+.social__message-h-m {
+	font-size: 0.7vw;
+	place-self: end;
+}
+
+.social__message-d-m-y {
+	padding: 1%;
+	justify-self: center;
+	border: 1px solid black;
+}
+
+.social__dialogue-textarea {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 90% 10%;
+	background-color: rgba(255,215,0, 0.1);
+}
+
+.social__dialogue-input {
+	padding: 1%;
+}
+
+.social__button_type_send:active {
+	filter: brightness(50%);
+}
+
+.social__button_type_send {
+	/*border: none;*/
+	background-image: url(/app/main/view/media/icons/profile/mail-dove.png);
+}
+
+@keyframes theme_gold_blinging {
+	from {
+		filter: opacity(100%);
+	}
+	to {
+		filter: opacity(40%);
+	}
+}
+
+
+/**
+ * Interface -> interface-bottom CSS
+ *
+ * Interface-bottom elements are:
+ * - progress-bar
+ */
+
+.interface-bottom {
+	grid-area: interface-bottom;
+}
+
+.progress-bar {
+	display: block;
+	background-image: linear-gradient(to right, gold, orangered);
+	height: 100%;
+}
+
+@media (orientation: portrait) { /*Row gap fix*/
+	.interface-left {
+		grid-template-rows: [user-card] 42.9% 
+							[game-modes] 47.65%
+							[wiki-music] 8.85%;
+		grid-row-gap: 0.3%;
+	}
+	.interface-right {
+		grid-template-rows: [interface-right__top-part-1] 5.94% 
+							[interface-right__top-part-2] 36.66% 
+							[bottom-part] 56.8%;
+		grid-row-gap: 0.3%;
+	}
+	.controls {
+		grid-template-rows: [empty] 4.5% 
+							[controls] 95.5%;
+	}
+}
+
+::-webkit-input-placeholder {
+	opacity: 1;
+	/*text-align: center;*/
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	opacity: 1;
+	/*text-align: center;*/
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	opacity: 1;
+	/*text-align: center;*/
+}
+
+:-ms-input-placeholder {  
+	opacity: 1;
+	/*text-align: center;*/
+}
+
+/* Firefox, Chrome, Opera */ 
+::placeholder {
+	opacity: 1;
+	color: gold;
+	/*text-align: center;*/
+}

@@ -1,0 +1,403 @@
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	overflow: hidden;
+
+	/*background-color: rgba(10, 10, 10, 0.8);*/
+
+	/*font-family: "Roboto", sans-serif;*/
+	/*font-family: "Russo One", sans-serif;*/
+	font-size: 1.1vw;
+	/*color: gold;*/
+	/*background-color: rgb(10, 10, 10);*/
+	/*background-size: contain;*/
+	/*background-image: url("/app/main/view/media/images/homepage/homepage.png");*/
+	/*background-image: url("/app/main/view/media/images/homepage/homepage.png");
+	background-position: bottom;
+	background-repeat: no-repeat;*/
+	text-align: center;
+}
+
+button {
+	height: 100%;
+	background-color: unset;
+	outline: 0;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+input {
+	color: inherit;
+	border: none;
+	outline: 0;
+	background-color: unset;
+	text-align: center;
+	font-family:inherit;
+	font-size: inherit;
+	text-overflow: ellipsis;
+}
+
+.image {
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon {
+	display: block;
+	height: 100%;
+	background-size: 2.5vw 2.5vw;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.theme_d {
+	color: gold;
+	background-color: rgb(10, 10, 10);
+}
+
+.theme_g {
+	color: rgb(10, 10, 10);
+	background-color: gold;
+}
+
+/*.label {
+	position: absolute;
+	top: 89.5%;
+	right: 47.1%;
+	font-family: Nunito;
+	font-size: 2vw;
+}*/
+.font_j {
+	font-family: 'Jura', sans-serif;
+}
+
+/*[class*="font_pressuru"] {
+	font-family: "PressuruRegular";
+	letter-spacing: 0.05vw;
+}*/
+
+.font_r-o {
+	font-family: 'Russo One', sans-serif;
+}
+
+.state_default .svg__pyramid_type_yin-yang,
+.state_default .svg__circle_type_register,
+.state_default .svg__circle_type_login,
+[class*="go_login"] .svg__circle_type_login,
+[class*="go_info"] .svg__pyramid_type_yin-yang,
+.about__video,
+[class*="go_register"] .svg__circle_type_register {
+	cursor: pointer;
+}
+
+/*.svg__close*/
+/*.login-form,
+.register-form,*/
+.svg__temet-nosce,
+.svg__ankh,
+.svg__init,
+.svg__close {
+	/*display: none;*/
+	opacity: 0;
+	transition: .345s;
+}
+
+.svg__circle_type_register,
+.svg__pyramids,
+.svg__circle,
+.svg__pyramid_type_light,
+.svg__pyramid_type_darkness {
+ 	transition: 1.5s;
+}
+
+[class*="go_login"] .svg__circle_type_register,
+[class*="go_login"] .svg__pyramids,
+[class*="go_info"] .svg__circle,
+[class*="go_info"] .svg__pyramid_type_light,
+[class*="go_info"] .svg__pyramid_type_darkness,
+[class*="go_register"] .svg__circle_type_login,
+[class*="go_register"] .svg__pyramids {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+/*.go_register_state_loading .svg__circle_type_login*/
+.state_default .svg__circle_type_login:hover .svg__ankh,
+.state_default .svg__circle_type_register:hover .svg__init,
+.state_default .svg__pyramid_type_yin-yang:hover .svg__temet-nosce,
+[class*="go_login"] .login-form,
+[class*="go_login"] .svg__circle_type_login .svg__close,
+[class*="go_info"] .info,
+[class*="go_info"] .svg__pyramid_type_yin-yang .svg__close,
+[class*="go_register"] .register-form,
+[class*="go_register"] .svg__circle_type_register .svg__close {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.login-form,
+.register-form,
+.info {
+	display: grid;
+	position: absolute;
+}
+
+.login-form,
+.register-form {
+	top: 18.3%;
+	/*width: 26.6%;*/
+	width: 26.6%;
+	padding: 1%;
+	place-items: center;
+	grid-auto-rows: 1fr;
+	min-height: min-content;
+	/*grid-auto-rows: 1fr;*/
+	/*padding-top: unset;*/
+	/*padding-top: unset;*/
+}
+
+.register-form {
+	/*box-sizing: border-box;*/
+	
+	/*border: 1.5px solid gold;
+	border-right: none;*/
+	right: -13%;
+	max-height: 79%;
+	/*height: 33%;*/
+	background-color: rgba(10, 10, 10, 0.9);
+	
+	/*max-height: max-content;*/
+}
+
+[class*="go_register"] .register-form {
+	right: 0%;
+} 
+
+.info,
+.login-form,
+.register-form {
+	pointer-events: none;
+	opacity: 0;
+	transition: 0.6s;
+}
+
+.login-form {
+	left: -13%;
+	/*height: 30%;*/
+	/*min-height: min-content;*/
+	/*width: 26.6%;*/
+	/*background-color: gold;*/
+	/*grid-auto-rows: 1fr;*/
+	/*grid-auto-rows: 20% 1fr 1fr 1fr;*/
+}
+
+[class*="go_login"] .login-form {
+	/*opacity: 1;*/
+	left: 0%;
+}
+
+.register-form__label,
+.login-form__label {
+	/*place-self: center;*/
+	padding: 3%;
+	font-size: 1.6vw;
+}
+
+.login-form__input {
+	border-bottom: 1.5px solid rgb(10, 10, 10);
+	font-size: 1.3vw;
+	width: 80%;
+}
+
+.register-form__input {
+	border-bottom: 1.5px solid gold;
+	font-size: 1.3vw;
+	width: 80%;
+}
+
+.login-form__button_type_login {
+	width: 15%;
+	/*height: 90%;*/
+	background-image: url(/app/main/view/media/icons/homepage/login.png);
+}
+
+.register-form__button_type_register {
+	width: 15%;
+	background-image: url(/app/main/view/media/icons/homepage/register2.svg);
+}
+
+.register-form__message {
+	display: none;
+	text-align: start;
+	width: 80%;
+	/*display: flex;*/
+}
+
+/*.register-form__message-mark,
+.register-form__message {
+	display: inline-block;
+}*/
+
+.register-form__message-mark {
+	/*width: 6%;*/
+	/*margin-right: 2%;*/
+	margin-right: 0.5vw;
+}
+
+.register-form__message-mark::after {
+	content: '—';
+}
+
+.register-form__message-mark_color_aqua {
+	color: aqua;
+}
+
+.register-form__message-mark_color_lime {
+	color: lime;
+}
+
+.register-form__message-mark_color_hotpink {
+	color: hotpink;
+}
+
+.login-form.error_email .login-form__input_type_email,
+.login-form.error_password .login-form__input_type_password,
+.login-form.error_verification-code .login-form__input_type_verification-code {
+	border-bottom: 1.5px solid red;
+}
+
+.info {
+	/*place-items: center;*/
+	/*display: grid;*/
+	grid-template-rows: 1fr;
+	background-color: rgb(10, 10, 10);
+	/*position: absolute;*/
+	bottom: 10%;
+	left: 35%;
+	width: 30%;
+	height: 80%;
+}
+
+[class*="go_info"] .info {
+	bottom: 20%;
+}
+
+.about__video {
+	/*object-fit: fill;*/
+	grid-row: 1 / span 2;
+	grid-column: 1;
+	object-fit: cover;
+	max-width: 100%;
+	min-height: 100%;
+	max-height: 100%;
+}
+
+.about__descriptiion {
+	background-color: rgba(10, 10, 10, 0.6);
+	grid-row: 2;
+	grid-column: 1;
+	display: grid;
+	padding: 2%;
+}
+
+.about__title {
+	padding: 1%;
+	font-size: 1.5vw;
+}
+
+.register-form__rose,
+.register-form__message-text,
+.about__content {
+	word-break: break-all;
+	/*hyphens: auto;*/
+}
+
+.about__stand-by {
+	grid-row: 1;
+	grid-column: 1;
+	background-image: url(/app/main/view/media/images/homepage/stand_by.png)
+}
+
+/*Recapthca selector*/
+.register-form + div {
+	top: 0 !important;
+	transform: scale(0.622);
+	/*Use also translateX to fix with clientRectangle js*/
+}
+
+.register_success .register-form__input,
+.register_success .register-form__google-p-t,
+.register_success .register-form__button,
+.svg__success-mark,
+.register-form__rose,
+.svg__memento-mori,
+.g-recaptcha,
+.grecaptcha-badge,
+.login-form__message_type_verification,
+.login-form__input_type_verification-code,
+[class*="go_login_state_verification"] .login-form__input_type_email,
+[class*="go_login_state_verification"] .login-form__input_type_password {
+	display: none;
+}
+
+.register-form__google-p-t {
+	font-size: 0.7vw;
+	/*align-self: start;*/
+	width: 80%;
+}
+
+.register-form__link {
+	/*color: cadetblue;*/
+	color: inherit;
+}
+
+.register-form.error_duplicate .register-form__input_type_email,
+.register-form.error_empty-email .register-form__input_type_email,
+.register-form.error_email .register-form__input_type_email {
+	border-bottom: 1.5px solid aqua;
+}
+
+.register-form.error_duplicate .register-form__input_type_username,
+.register-form.error_empty-username .register-form__input_type_username,
+.register-form.error_username .register-form__input_type_username {
+	border-bottom: 1.5px solid lime;
+}
+
+.register-form.error_empty-password .register-form__input_type_password,
+.register-form.error_password .register-form__input_type_password {
+	border-bottom: 1.5px solid hotpink;
+}
+
+.register-form.error_duplicate .register-form__message_type_duplicate,
+.register-form.error_email .register-form__message_type_email,
+.register-form.error_username .register-form__message_type_username,
+.register-form.error_password .register-form__message_type_password {
+	display: flex;
+}
+
+/*.go_register_state_success .svg__success-mark,
+.go_register_state_success .register-form__rose,*/
+[class*="go_register"].register_success .svg__success-mark,
+.register_success .register-form__rose,
+.go_register_state_loading .svg__circle_type_register .svg__memento-mori,
+.go_login_state_loading .svg__circle_type_login .svg__memento-mori,
+.go_login_state_verification_loading .svg__circle_type_login .svg__memento-mori,
+[class*="go_login_state_verification"] .login-form__message_type_verification,
+[class*="go_login_state_verification"] .login-form__input_type_verification-code {
+	display: block;
+}
+
+.emoji {
+	font-size: 2vw;
+}
+
+.login-form__message_type_verification {
+	width: 80%;
+	hyphens: auto;
+}

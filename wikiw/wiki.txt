@@ -1,0 +1,87 @@
+https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&titles=hello&redirects=true
+
+
+https://ru.wikipedia.org/w/api.php?format=json&action=query&prop=extracts|pageimages|info&pithumbsize=400&exlimit=max&explaintext&titles=Библия&redirects=true
+
++ prop=images - get names of all images
+  ./pageimages - get max sized main image with url
++iiprop -get image url
+
+//Get all media
+https://en.wikipedia.org/w/api.php?action=query&prop=imageinfo&format=json&iiprop=url&titles=Michael_Jackson&generator=images
+
+//Get image url by file: Name 
+https://en.wikipedia.org/w/api.php?action=query&format=json&prop=imageinfo&titles=File:Coat%20of%20arms%20of%20Israel.svg&iiprop=url
+
+//Get article by title
+https://en.wikipedia.org/w/api.php?action=query&titles=Bible&format=json&redirects=true
+
+//Get article info in json by id
+https://en.wikipedia.org/w/api.php?action=query&prop=info&format=json&pageids=9033355
+
+//Get random article
+https://en.wikipedia.org/w/api.php?format=json&action=query&list=random&rnnamespace=0&rnlimit=1
+
+OR
+
+https://en.wikipedia.org/w/api.php?action=query&list=random&format=json&rnnamespace=0&rnlimit=1
+
+OR BETTER 
+https://ru.wikipedia.org/w/api.php?format=json&action=query&prop=extracts|pageimages|info|links&pithumbsize=400&exlimit=max&explaintext&generator=random&grnnamespace=0&redirects=true
+
+ rnamespace = 6 - ogg,ogv,jpg,png,svg (webm)
+//////////////////////////////////////
+
+//Get random file
+
+https://commons.wikimedia.org/wiki/Special:Random/File
+
+//Misc
+https://commons.wikimedia.org/w/index.php?title=Category:Audio_files_of_music
+https://en.wikipedia.org/wiki/Wikipedia:Spoken_articles
+https://commons.wikimedia.org/wiki/Category:Audio_files_of_music_by_genre
+
+//Get article by id
+https://en.wikipedia.org/wiki/?curid=736
+
+790 - 100
+  x - 13
+
+Сделать проверку инпута, отправить пост запрос, проверить валидность по айди и старт
+
+Сделать подгрузку background`ов всех режимов на загрузке страницы
+-----
+Поменять каптча ключи, настроить выбираемый язык пользователя
+
+
+
+Замена символов в предложении/предложениях
+Найти недостающие слова
+Найти лишние
+Записать самое длинное предложение
+Перемешать символы
+
+Перемешать слова
+
+Половина половины
+
+
+        if($.inArray('1', advModeStagesPassed) == '-1') {
+            advModeStagesPassed.push('1');
+            $(adventureModeSubmit).attr('data-click-action', 'completeAdvModeStage1');
+        }
+        else {
+            var nextStage = randDistinctArrNumVal({array: advModeStagesPassed, arrMinVal: '1', arrMaxVal: '5'});
+            console.log('nextStage is ', nextStage);
+        }
+
+
+правило»).
+
+прави»)ол.
+
+https://www.mediawiki.org/w/api.php?action=query&format=json&generator=random&grnnamespace=6&grnlimit=500&prop=pageimages&prop=imageinfo&iiprop=url
+
+https://en.wikipedia.org/w/api.php?action=query&list=random&format=json&rnnamespace=6&rnlimit=500
+
+&prop=info&inprop=url ! also

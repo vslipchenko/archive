@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 8466.66 8466.66"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="591" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Bauhaus 93">
+		<font-face-src>
+			<font-face-name name="Bauhaus 93"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="K" horiz-adv-x="644" d="M645.501 667.003l-175.832 -302.667 174.835 -364.336 -222.667 0 -150.835 368.336 170.835 298.667 203.664 0zm-380.504 0l0 -667.003 -197.995 0 0 667.003 197.995 0z"/>
+   <glyph unicode="i" horiz-adv-x="290" d="M236 487.003l0 -487.003 -183.003 0 0 487.003 183.003 0zm-90.4987 216.997c24.8294,0 46.1627,-8.66142 64.336,-26.1627 18.1627,-17.3333 27.1601,-38.0052 27.1601,-61.8373 0,-25.3333 -8.49344,-46.3307 -25.6588,-62.4987 -17.1759,-16.336 -39.0026,-24.5039 -65.8373,-24.5039 -26.6667,0 -48.6719,8.16798 -65.8373,24.5039 -17.1654,16.168 -25.6588,37.1654 -25.6588,62.4987 0,23.832 8.99738,44.5039 27.1601,61.8373 18.1732,17.5013 39.5066,26.1627 64.336,26.1627z"/>
+   <glyph unicode="w" horiz-adv-x="774" d="M52.9974 480l183.003 0 0 -262.163c0,-20.6719 2.16273,-34.8346 6.33071,-42.8346 4.16798,-8 11.832,-12 23.0026,-12 20.5039,0 30.6667,18.3307 30.6667,54.8346l0 262.163 183.003 0 0 -262.163c0,-20.6719 2.16273,-34.8346 6.49869,-42.8346 4.33596,-8 11.832,-12 22.8346,-12 19.832,0 29.6693,18.3307 29.6693,54.8346l0 262.163 182.992 0 0 -299.832c0,-54.8346 -18.3307,-101.333 -55.1601,-139.664 -36.6719,-38.3412 -81.1654,-57.5013 -133.501,-57.5013 -54.0052,0 -102.331,23.0026 -145.333,68.8294 -47.664,-45.8268 -95.5066,-68.8294 -143.832,-68.8294 -60.8399,0 -109.837,22.1627 -146.667,66.4987 -29.0079,35.0026 -43.5066,85.3333 -43.5066,151.171l0 279.328z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Bauhaus 93";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke:#2B2A29;stroke-width:20;stroke-miterlimit:22.9256}
+    .str5 {stroke:#B5975A;stroke-width:20;stroke-miterlimit:22.9256}
+    .str4 {stroke:#CFAF6E;stroke-width:20;stroke-miterlimit:22.9256}
+    .str3 {stroke:#E3BC6D;stroke-width:20;stroke-miterlimit:22.9256}
+    .str2 {stroke:#EBC475;stroke-width:20;stroke-miterlimit:22.9256}
+    .str1 {stroke:#FFDC96;stroke-width:20;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil7 {fill:#B5975A}
+    .fil6 {fill:#CFAF6E}
+    .fil4 {fill:#D4C882}
+    .fil5 {fill:#E3BC6D}
+    .fil3 {fill:#FCDC9C}
+    .fil1 {fill:gold}
+    .fil2 {fill:gold}
+    .fnt0 {font-weight:normal;font-size:952.5px;font-family:'Bauhaus 93'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polyline class="fil0 str0" points="6028.26,8407.4 3852.33,8407.4 25.4,8407.4 1938.86,6026.15 3852.33,3644.9 5765.8,6026.15 7679.26,8407.4 "/>
+  <path class="fil0 str0" d="M11768.66 8407.4l-1435.1 -1785.95 -1435.11 -1785.93 -1435.09 1785.93 -602.8 750.17 818.7 1035.78 1219.19 0 1632.41 0m1238.5 8.46l-1238.5 -8.46m-1632.41 -3571.88l1632.41 3571.88"/>
+  <polyline class="fil0 str0" points="11149.76,7637.19 11190.57,7586.41 11480.79,7225.24 12437.52,6034.61 13394.26,7225.24 14350.99,8415.86 12437.52,8415.86 11769.36,8415.86 "/>
+  <line class="fil0 str0" x1="3852.33" y1="3627.96" x2="5179.6" y2= "8407.4" />
+  <line class="fil0 str0" x1="12437.52" y1="6034.61" x2="13709.77" y2= "8415.86" />
+  <circle class="fil1" cx="3852.33" cy="2112.43" r="1193.8"/>
+  <circle class="fil2" cx="12437.52" cy="5247.21" r="596.9"/>
+  <line class="fil0 str0" x1="6028.26" y1="8407.4" x2="7679.26" y2= "8407.4" />
+  <polygon class="fil3 str1" points="5179.6,8407.4 3859.52,3653.85 3852.33,3644.9 1938.86,6026.15 25.4,8407.4 3852.33,8407.4 "/>
+  <polygon class="fil4 str0" points="3859.52,3653.85 5179.6,8407.4 6028.26,8407.4 7679.26,8407.4 5765.8,6026.15 "/>
+  <polygon class="fil3 str0" points="8898.45,4835.52 7463.36,6621.45 6860.56,7371.62 7679.26,8407.4 8898.45,8407.4 10530.86,8407.4 "/>
+  <line class="fil0 str0" x1="11202.09" y1="7702.32" x2="11769.36" y2= "8415.86" />
+  <polygon class="fil5 str2" points="10530.86,8407.4 8898.45,4835.52 7463.36,6621.45 6860.56,7371.62 7679.26,8407.4 8898.45,8407.4 "/>
+  <path class="fil4 str0" d="M11578.2 8177.46l-337.37 -420.74c-92.36,43.86 -210.55,40.36 -311.87,-43.23l-87.08 -53.5c-79.19,-33.48 -154.89,-96.75 -224.65,-150.31 -201.4,-154.65 -253.51,-205.46 -352.02,-325.42l211.66 467.28c49.56,84.17 48.95,203.79 71.48,251.09 27.99,58.77 22.25,92.92 26.23,107.85 27.08,101.61 1.54,69.39 38.03,147.28 92.6,0.43 166.87,1.02 196.78,1.39l260.43 11.52c65.75,8.86 310.61,8.13 508.38,6.79z"/>
+  <polygon class="fil5 str3" points="7679.26,8407.4 5765.8,6026.15 3887.84,3689.09 3864.9,3663.03 5179.6,8407.4 6028.26,8407.4 "/>
+  <polygon class="fil6 str4" points="8932.33,4868.33 10530.86,8407.4 11769.36,8415.86 11202.09,7702.32 11149.76,7637.19 10333.56,6621.45 "/>
+  <polygon class="fil6 str4" points="12437.52,6034.61 11480.79,7225.24 11190.57,7586.41 11149.76,7637.19 11202.09,7702.32 11769.36,8415.86 12437.52,8415.86 13709.77,8415.86 "/>
+  <polygon class="fil7 str5" points="12480.9,6088.59 13709.77,8415.86 14350.99,8415.86 13394.26,7225.24 "/>
+  <g transform="matrix(0.642788 -0.766044 0.766044 0.642788 2219.27 5981.63)">
+   <text x="4233.33" y="4233.33"  class="fil1 fnt0">wi</text>
+  </g>
+  <g transform="matrix(-0.642788 -0.766044 -0.766044 0.642788 15574.6 5981.63)">
+   <text x="4233.33" y="4233.33"  class="fil1 fnt0">wi</text>
+  </g>
+  <text x="8567.6" y="4419.6"  class="fil1 fnt0">K</text>
+ </g>
+</svg>
